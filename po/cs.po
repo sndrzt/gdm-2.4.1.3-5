@@ -1,0 +1,3256 @@
+# Czech translation for the GDM 2.
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# George Lebl <jirka@5z.com>, 2000.
+# Michal Bukovjan <michal.bukovjan@openone.cz>, 2002.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gdm2 2.4.0.4\n"
+"POT-Creation-Date: 2003-01-31 16:02-0800\n"
+"PO-Revision-Date: 2002-12-23 01:18+0100\n"
+"Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. DON\'T CHANGE THIS BY HAND! CHANGE THE SCRIPT THIS IS GENERATED
+#. ALWAYS ADD A CHANGELOG OR I WILL PERSONALLY KICK YOUR ASS!
+#: config/gettextfoo.h:3
+msgid ""
+"I cannot start the X server (your graphical interface).  It is likely that "
+"it is not set up correctly.  You will need to log in on a console and rerun "
+"the X configuration program.  Then restart GDM."
+msgstr ""
+"Nelze spustit X server (vaše grafické rozhraní). Pravděpodobně není správně "
+"nastavený. Budete se muset přihlásit na konzoli a znovu spustit program pro "
+"nastavení X serveru. Poté znovu spusťte GDM."
+
+#: config/gettextfoo.h:4
+msgid ""
+"Would you like me to try to run the X configuration program?  Note that you "
+"will need the root password for this."
+msgstr ""
+"Mám se pokusit spustit program pro nastavení X serveru? V případě, že ano, "
+"budu potřebovat heslo pro uživatele 'root'."
+
+#: config/gettextfoo.h:5
+msgid "Please type in the root (privileged user) password."
+msgstr "Zadejte prosím heslo uživatele 'root' (administrátora)."
+
+#: config/gettextfoo.h:6
+msgid "I will now try to restart the X server again."
+msgstr "Zkusím teď spustit X server znovu."
+
+#: config/gettextfoo.h:7
+msgid ""
+"I will disable this X server for now.  Restart GDM when it is configured "
+"correctly."
+msgstr ""
+"Nyní vypnu tento X server. Spusťte znovu GDM.poté, co bude správně nastaven."
+
+#: config/gettextfoo.h:8
+msgid ""
+"I cannot start the X server (your graphical interface).  It is likely that "
+"it is not set up correctly.  Would you like to view the X server output to "
+"diagnose the problem?"
+msgstr ""
+"Nelze spustit X server (vaše grafické rozhraní). Pravděpodobně není správně "
+"nastavený. Chcete zobrazit výstup X serveru a pokusit se identifikovat "
+"problém?"
+
+#: config/gettextfoo.h:9
+msgid ""
+"I cannot start the X server (your graphical interface).  It seems that the "
+"pointer device (your mouse) is not set up correctly.  Would you like to view "
+"the X server output to diagnose the problem?"
+msgstr ""
+"Nelze spustit X server (vaše grafické rozhraní). Zdá se, že vaše polohovací "
+"zařízení (vaše myš) není správně nastavena. Chcete zobrazit výstup X serveru "
+"a pokusit se identifikovat problém?"
+
+#: config/gettextfoo.h:10
+msgid ""
+"Would you like me to try to run the mouse configuration program?  Note that "
+"you will need the root password for this."
+msgstr ""
+"Mám se pokusit spustit program pro nastavení myši? V případě, že ano, budu "
+"potřebovat heslo pro uživatele 'root'."
+
+#: daemon/auth.c:55
+#, c-format
+msgid "%s: Could not write new authorization entry: %s"
+msgstr "%s: Nelze zapsat novou autorizační položku: %s"
+
+#: daemon/auth.c:58
+#, c-format
+msgid "%s: Could not write new authorization entry.  Possibly out of diskspace"
+msgstr ""
+"%s: Nelze zapsat novou autorizační položku.  Pravděpodobně došlo místo na "
+"disku."
+
+#: daemon/auth.c:63
+#, c-format
+msgid ""
+"GDM could not write a new authorization entry to disk.  Possibly out of "
+"diskspace.%s%s"
+msgstr ""
+"Nelze zapsat novou autorizační položku.  Pravděpodobně došlo místo na disku.%"
+"s%s"
+
+#: daemon/auth.c:179
+#, c-format
+msgid "%s: Could not make new cookie file in %s"
+msgstr "%s: Nelze vytvořit nový soubor sušenek (cookies) v %s"
+
+#. Really no need to clean up here - this process is a goner anyway
+#: daemon/auth.c:437 daemon/auth.c:471
+#, c-format
+msgid "gdm_auth_user_add: Could not open cookie file %s"
+msgstr "gdm_auth_user_add: Nelze otevřít soubor sušenek (cookies) %s"
+
+#: daemon/auth.c:454
+#, c-format
+msgid "gdm_auth_user_add: Could not lock cookie file %s"
+msgstr "gdm_auth_user_add: Nelze uzamknout soubor sušenek (cookies) %s"
+
+#: daemon/auth.c:500
+#, c-format
+msgid "%s: Could not write cookie"
+msgstr "%s: Nelze zapsat sušenku (cookie)"
+
+#: daemon/auth.c:574
+#, c-format
+msgid "gdm_auth_user_remove: Ignoring suspiciously looking cookie file %s"
+msgstr "gdm_auth_user_add: Ignoruji podezřelý soubor sušenek (cookies) %s"
+
+#. This means we have no clue what's happening,
+#. * it's not X server crashing as we would have
+#. * cought that elsewhere.  Things are just
+#. * not working out, so tell the user
+#: daemon/display.c:98 daemon/display.c:105
+#, c-format
+msgid ""
+"Failed to start the display server several times in a short time period; "
+"disabling display %s"
+msgstr ""
+"V krátkém čase selhalo několikrát za sebou spuštění grafického serveru; "
+"vypínám displej %s"
+
+#: daemon/display.c:163
+#, c-format
+msgid "%s: Cannot create pipe"
+msgstr "%s: Nelze vytvořit rouru"
+
+#: daemon/display.c:254
+#, c-format
+msgid "gdm_display_manage: Failed forking gdm slave process for %s"
+msgstr "gdm_display_manage: Nepodařilo se větvit proces gdm slave pro %s"
+
+#: daemon/errorgui.c:133
+#, c-format
+msgid "%s could not be opened"
+msgstr "Nešlo otevřít %s"
+
+#: daemon/errorgui.c:283
+msgid "gdm_error_box: Cannot fork to display error/info box"
+msgstr "gdm_error_box: Nelze větvit proces pro zobrazení chyby/informace"
+
+#: daemon/errorgui.c:435 daemon/errorgui.c:557
+msgid "gdm_failsafe_question: Cannot fork to display error/info box"
+msgstr ""
+"gdm_failsafe_question: Nelze větvit proces pro zobrazení chyby/informace"
+
+#: daemon/filecheck.c:49
+#, c-format
+msgid "%s: Directory %s does not exist."
+msgstr "%s: Adresář %s neexistuje."
+
+#: daemon/filecheck.c:56 daemon/filecheck.c:97
+#, c-format
+msgid "%s: %s is not owned by uid %d."
+msgstr "%s: %s není vlastněn uid %d."
+
+#: daemon/filecheck.c:62 daemon/filecheck.c:104
+#, c-format
+msgid "%s: %s is writable by group."
+msgstr "%s: %s je přepisovatelný skupinou."
+
+#: daemon/filecheck.c:68
+#, c-format
+msgid "%s: %s is writable by other."
+msgstr "%s: %s je přepisovatelný ostatními."
+
+#: daemon/filecheck.c:82
+#, c-format
+msgid "%s: %s does not exist but must exist."
+msgstr "%s: %s musí existovat, ale neexistuje."
+
+#: daemon/filecheck.c:90
+#, c-format
+msgid "%s: %s is not a regular file."
+msgstr "%s: %s není běžný soubor."
+
+#: daemon/filecheck.c:111
+#, c-format
+msgid "%s: %s is writable by group/other."
+msgstr "%s: %s je zapisovatelný skupinou/ostatními."
+
+#: daemon/filecheck.c:118
+#, c-format
+msgid "%s: %s is bigger than sysadmin specified maximum file size."
+msgstr "%s: %s je větší než správcem systému udaná maximální velikost souboru."
+
+#: daemon/gdm-net.c:248
+#, c-format
+msgid "%s: Could not make socket"
+msgstr "%s: Nelze vytvořit soket"
+
+#: daemon/gdm-net.c:258
+#, c-format
+msgid "%s: Could not bind socket"
+msgstr "%s: Nelze připojit soket"
+
+#: daemon/gdm-net.c:336
+#, c-format
+msgid "%s: Could not make FIFO"
+msgstr "%s: Nelze vytvořit FIFO"
+
+#: daemon/gdm-net.c:344
+#, c-format
+msgid "%s: Could not open FIFO"
+msgstr "%s: Nelze otevřít FIFO"
+
+#: daemon/gdm.c:225
+#, c-format
+msgid "%s: No configuration file: %s. Using defaults."
+msgstr "%s: Žádný konfigurační soubor: %s. Použiji implicitní hodnoty."
+
+#: daemon/gdm.c:298
+#, c-format
+msgid "%s: Standard X server not found, trying alternatives"
+msgstr "%s: Nenalezl jsem standardní X server, zkouším alternativy"
+
+#: daemon/gdm.c:327
+#, c-format
+msgid "%s: XDMCP was enabled while there is no XDMCP support, turning it off"
+msgstr ""
+"%s: Byl povolený protokol XDMCP, ale není podporovaný, takže jej vypínám"
+
+#: daemon/gdm.c:340
+#, c-format
+msgid "%s: Root cannot be autologged in, turing off automatic login"
+msgstr ""
+"%s: Root se nemůže automaticky přihlašovat, vypínám automatické přihlašování"
+
+#: daemon/gdm.c:353
+#, c-format
+msgid "%s: Root cannot be autologged in, turing off timed login"
+msgstr ""
+"%s: Root se nemůže automaticky přihlašovat, vypínám časované přihlašování"
+
+#: daemon/gdm.c:359
+#, c-format
+msgid "%s: TimedLoginDelay less then 5, so I will just use 5."
+msgstr "%s: TimedLoginDelay méně než 5, proto použiji 5"
+
+#: daemon/gdm.c:369
+#, c-format
+msgid "%s: No greeter specified."
+msgstr "%s: Žádný program pro přívítání nebyl zadán."
+
+#: daemon/gdm.c:372
+#, c-format
+msgid "%s: No remote greeter specified."
+msgstr "%s: Žádný vzdálený program pro přívítání nebyl zadán."
+
+#: daemon/gdm.c:377
+msgid "No daemon/ServAuthDir specified in the configuration file"
+msgstr "V souboru s nastavením není uveden démon ani ServAuthDir"
+
+#: daemon/gdm.c:379
+#, c-format
+msgid "%s: No authdir specified."
+msgstr "%s: Žádné AuthDir není zadáno."
+
+#: daemon/gdm.c:386
+#, c-format
+msgid "%s: No sessions directory specified."
+msgstr "%s: Žádný adresář sezení nespecifikován."
+
+#: daemon/gdm.c:412
+#, c-format
+msgid "%s: Empty server command, using standard one."
+msgstr "%s: Prázdný příkaz serveru, použiji standardní."
+
+#: daemon/gdm.c:458
+#, c-format
+msgid "%s: Display number %d in use!  I will use %d"
+msgstr "%s: Číslo displeje %d je již obsazené! Použiji číslo %d"
+
+#: daemon/gdm.c:475
+#, c-format
+msgid "%s: Invalid server line in config file. Ignoring!"
+msgstr "%s: Nesprávná řádek serveru v konfiguračním soubotu. Ignoruji!"
+
+#. start
+#. server uid
+#: daemon/gdm.c:498
+#, c-format
+msgid ""
+"%s: XDMCP disabled and no local servers defined. Adding %s on :%d to allow "
+"configuration!"
+msgstr ""
+"%s: Protokol XDMCP je vypnutý a nebyly definovány žádné místní servery. "
+"Přidávám %s na :%d pro možnost nastavení!"
+
+#: daemon/gdm.c:513
+#, c-format
+msgid ""
+"XDMCP is disabled and gdm cannot find any local server to start.  Aborting!  "
+"Please correct the configuration %s and restart gdm."
+msgstr ""
+"Protokol XDMCP je vypnutý a nelze najít žádný lokální server, který by bylo "
+"možné spustit. Končím! Opravte prosím nastavení %s a znovu spusťte GDM."
+
+#: daemon/gdm.c:521
+#, c-format
+msgid "%s: XDMCP disabled and no local servers defined. Aborting!"
+msgstr ""
+"%s: Protokol XDMCP je vypnutý a žádné místní servery nebyly definovány. "
+"Končím!"
+
+#: daemon/gdm.c:529
+#, c-format
+msgid "%s: Can't find the gdm user (%s). Trying 'nobody'!"
+msgstr "%s: Nelze najít uživatele gdm (%s). Zkusím 'nobody'!"
+
+#: daemon/gdm.c:537
+#, c-format
+msgid ""
+"The gdm user does not exist. Please correct gdm configuration %s and restart "
+"gdm."
+msgstr ""
+"Uživatel gdm neexistuje.  Prosím opravte nastavení gdm %s a restartujte jej."
+
+#: daemon/gdm.c:543
+#, c-format
+msgid "%s: Can't find the gdm user (%s). Aborting!"
+msgstr "%s: Nemohu najít uživatele gdm (%s). Končím!"
+
+#: daemon/gdm.c:550
+#, c-format
+msgid ""
+"The gdm user is set to be root, but this is not allowed since it can pose a "
+"security risk.  Please correct gdm configuration %s and restart gdm."
+msgstr ""
+"Uživatel GDM je nastavený jako root, což je kvůli bezpečnostním rizikům "
+"zakázané. Opravte prosím nastavení programu GDM %s a znovu jej spusťte."
+
+#: daemon/gdm.c:557
+#, c-format
+msgid "%s: The gdm user should not be root. Aborting!"
+msgstr "%s: Uživatel gdm nesmí být root. Končím!"
+
+#: daemon/gdm.c:563
+#, c-format
+msgid "%s: Can't find the gdm group (%s). Trying 'nobody'!"
+msgstr "%s Nemohu najít skupinu gdm (%s). Zkusím 'nobody'!"
+
+#: daemon/gdm.c:571
+#, c-format
+msgid ""
+"The gdm group does not exist. Please correct gdm configuration %s and "
+"restart gdm."
+msgstr ""
+"Skupina gdm neexistuje. Opravte prosím soubor s nastavením %s a znovu "
+"spusťte program GDM."
+
+#: daemon/gdm.c:577
+#, c-format
+msgid "%s: Can't find the gdm group (%s). Aborting!"
+msgstr "%s: Nemohu najít skupinu gdm (%s). Končím!"
+
+#: daemon/gdm.c:584
+#, c-format
+msgid ""
+"The gdm group is set to be root, but this is not allowed since it can pose a "
+"security risk. Please correct gdm configuration %s and restart gdm."
+msgstr ""
+"Skupina gdm je nastavená jako root, což je z bezpečnostních důvodů zakázáno. "
+"Opravte prosím nastavení programu GDM %s a znovu jej spusťte."
+
+#: daemon/gdm.c:591
+#, c-format
+msgid "%s: The gdm group should not be root. Aborting!"
+msgstr "%s: Skupina gdm nesmí být root. Končím!"
+
+#: daemon/gdm.c:606
+#, c-format
+msgid "%s: Greeter not found or can't be executed by the gdm user"
+msgstr ""
+"%s: Program pro přivítání nebyl nalezen nebo jej nelze spustit uživatelem gdm"
+
+#: daemon/gdm.c:613
+#, c-format
+msgid "%s: Remote greeter not found or can't be executed by the gdm user"
+msgstr ""
+"%s: Vzdálený program pro přivítání nebyl nalezen nebo jej nelze spustit "
+"uživatelem gdm."
+
+#: daemon/gdm.c:624
+#, c-format
+msgid "%s: Chooser not found or it can't be executed by the gdm user"
+msgstr ""
+"%s: Program pro výběr nebyl nalezen nebo jej nelze spustit uživatelem gdm"
+
+#: daemon/gdm.c:633
+#, c-format
+msgid ""
+"Server Authorization directory (daemon/ServAuthDir) is set to %s but this "
+"does not exist. Please correct gdm configuration %s and restart gdm."
+msgstr ""
+"Adresář pro ověřování serveru (daemon/ServAuthDir) je nastaven na %s, ale "
+"ten neexistuje. Opravte prosím nastavení programu GDM %s a znovu jej spusťte."
+
+#: daemon/gdm.c:641
+#, c-format
+msgid "%s: Authdir %s does not exist. Aborting."
+msgstr "%s: Adresář AuthDir %s neexistuje. Končím."
+
+#: daemon/gdm.c:646
+#, c-format
+msgid ""
+"Server Authorization directory (daemon/ServAuthDir) is set to %s but this is "
+"not a directory. Please correct gdm configuration %s and restart gdm."
+msgstr ""
+"Adresář pro ověřování serveru (daemon/ServAuthDir) je nastaven na %s, což "
+"není adresář. Opravte prosím nastavení programu GDM %s a znovu jej spusťte."
+
+#: daemon/gdm.c:654
+#, c-format
+msgid "%s: Authdir %s is not a directory. Aborting."
+msgstr "%s: Adresář AuthDir %s není adresář. Končím."
+
+#: daemon/gdm.c:659
+#, c-format
+msgid ""
+"Server Authorization directory (daemon/ServAuthDir) is set to %s but is not "
+"owned by user %s and group %s. Please correct the ownership or gdm "
+"configuration %s and restart gdm."
+msgstr ""
+"Adresář pro ověřování serveru (daemon/ServAuthDir) je nastaven na %s, ale "
+"nevlastní jej uživatel %s a skupina %s. Opravte prosím vlastníka adresáře "
+"nebo nastavení programu GDM %s a znovu jej spusťte."
+
+#: daemon/gdm.c:669
+#, c-format
+msgid "%s: Authdir %s is not owned by user %s, group %s. Aborting."
+msgstr ""
+"%s: Adresář AuthDir %s není vlastněn uživatelem %s a skupinou %s. Končím."
+
+#: daemon/gdm.c:675
+#, c-format
+msgid ""
+"Server Authorization directory (daemon/ServAuthDir) is set to %s but has the "
+"wrong permissions, it should have permissions of 0750. Please correct the "
+"permissions or the gdm configuration %s and restart gdm."
+msgstr ""
+"Adresář pro ověřování serveru (daemon/ServAuthDir) je nastaven na %s, ale má "
+"špatně nastavená práva, měl by mít práva 0750. Opravte prosím nastavení práv "
+"nebo nastavení programu GDM %s a znovu jej spusťte."
+
+#: daemon/gdm.c:685
+#, c-format
+msgid "%s: Authdir %s has wrong permissions %o. Should be 0750. Aborting."
+msgstr ""
+"%s: Adresář AuthDir %s má špatně nastavená práva %o. Mají být 0750. Končím."
+
+#: daemon/gdm.c:740
+#, c-format
+msgid "%s: fork() failed!"
+msgstr "%s: fork() selhal!"
+
+#. should never happen
+#: daemon/gdm.c:743 daemon/slave.c:2281
+#, c-format
+msgid "%s: setsid() failed: %s!"
+msgstr "%s: setsid() selhal: %s!"
+
+#: daemon/gdm.c:875
+#, c-format
+msgid "deal_with_x_crashes: Trying failsafe X server %s"
+msgstr "deal_with_x_crashes: Zkouším záchranný X server %s"
+
+#: daemon/gdm.c:891
+msgid "deal_with_x_crashes: Running the XKeepsCrashing script"
+msgstr "deal_with_x_crashes: Spouštím skript XKeepsCrashing"
+
+#: daemon/gdm.c:964
+msgid ""
+"I cannot start the X server (your graphical interface).  It is likely that "
+"it is not set up correctly. You will need to log in on a console and rerun "
+"the X configuration program.  Then restart GDM."
+msgstr ""
+"Nelze spustit X server (vaše grafické rozhraní). Pravděpodobně není správně "
+"nastavený. Budete se muset přihlásit na konzoli a znovu spustit program pro "
+"nastavení X serveru. Poté znovu spusťte GDM."
+
+#. else {
+#. * At this point .... screw the user, we don't know how to
+#. * talk to him.  He's on some 'l33t system anyway, so syslog
+#. * reading will do him good
+#. * }
+#: daemon/gdm.c:976
+#, c-format
+msgid ""
+"Failed to start X server several times in a short time period; disabling "
+"display %s"
+msgstr ""
+"V krátkém čase selhalo několikrát za sebou spuštění X serveru; vypínám "
+"displej %s"
+
+#: daemon/gdm.c:1058
+#, c-format
+msgid ""
+"gdm_child_action: Reboot or Halt request when there is no system menu from "
+"display %s"
+msgstr ""
+"gdm_child_action: Požadavek na restart nebo vypnutí, i když displej %s "
+"neobsahuje žádné systémové menu."
+
+#: daemon/gdm.c:1066
+#, c-format
+msgid ""
+"gdm_child_action: Restart, Reboot or Halt request from a non-local display %s"
+msgstr ""
+"gdm_child_action: Požadavek na nové spuštění, restart, nebo vypnutí z "
+"nelokálního displeje %s"
+
+#. Bury this display for good
+#: daemon/gdm.c:1102
+#, c-format
+msgid "gdm_child_action: Aborting display %s"
+msgstr "gdm_child_action: Ukončuji displej %s"
+
+#. Reboot machine
+#: daemon/gdm.c:1114
+msgid "gdm_child_action: Master rebooting..."
+msgstr "gdm_child_action: Restartuji..."
+
+#: daemon/gdm.c:1122
+#, c-format
+msgid "gdm_child_action: Reboot failed: %s"
+msgstr "gdm_child_action: Restart selhal: %s"
+
+#. Halt machine
+#: daemon/gdm.c:1129
+msgid "gdm_child_action: Master halting..."
+msgstr "gdm_child_action: Vypínám..."
+
+#: daemon/gdm.c:1137
+#, c-format
+msgid "gdm_child_action: Halt failed: %s"
+msgstr "gdm_child_action: Vypnutí selhalo: %s"
+
+#. Suspend machine
+#: daemon/gdm.c:1144
+msgid "gdm_child_action: Master suspending..."
+msgstr "gdm_child_action: Usínám..."
+
+#: daemon/gdm.c:1152
+#, c-format
+msgid "gdm_child_action: Suspend failed: %s"
+msgstr "gdm_child_action: Usnutí selhalo: %s"
+
+#: daemon/gdm.c:1250
+msgid "GDM restarting ..."
+msgstr "GDM restartuje ..."
+
+#: daemon/gdm.c:1255
+msgid "Failed to restart self"
+msgstr "Nemohu se restartovat"
+
+#: daemon/gdm.c:1352
+msgid "Do not fork into the background"
+msgstr "Nevětvit se do pozadí"
+
+#: daemon/gdm.c:1354
+msgid "Preserve LD_* variables"
+msgstr "Zachovat proměnné LD_*"
+
+#: daemon/gdm.c:1436 gui/gdmchooser.c:1071
+#, c-format
+msgid ""
+"Error on option %s: %s.\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"Chyba u volby %s: %s.\n"
+"Spusťte '%s --help' a získáte úplný výpis voleb dostupných z příkazové "
+"řádky.\n"
+
+#: daemon/gdm.c:1448
+msgid "Only root wants to run gdm\n"
+msgstr "Pouze root chce spustit gdm\n"
+
+#: daemon/gdm.c:1476
+msgid "gdm already running. Aborting!"
+msgstr "gdm již běží. Končím!"
+
+#: daemon/gdm.c:1510
+#, c-format
+msgid "%s: Error setting up TERM signal handler"
+msgstr "%s: Chyba při nastavování zpracování signálu TERM"
+
+#: daemon/gdm.c:1514
+#, c-format
+msgid "%s: Error setting up INT signal handler"
+msgstr "%s: Chyba při nastavování zpracování signálu INT"
+
+#: daemon/gdm.c:1518
+#, c-format
+msgid "%s: Error setting up HUP signal handler"
+msgstr "%s: Chyba při nastavování zpracování signálu HUP"
+
+#: daemon/gdm.c:1522
+#, c-format
+msgid "%s: Error setting up USR1 signal handler"
+msgstr "%s: Chyba při nastavování zpracování signálu USR1"
+
+#: daemon/gdm.c:1531
+#, c-format
+msgid "%s: Error setting up CHLD signal handler"
+msgstr "%s: Chyba při nastavování zpracování signálu CHLD"
+
+#: daemon/gdm.c:2634 daemon/gdm.c:2652
+msgid "Flexible server request denied: Not authenticated"
+msgstr "Odepřen flexibilní požadavek na server: Nepřihlášený"
+
+#. Don't print the name to syslog as it might be
+#. * long and dangerous
+#: daemon/gdm.c:2670
+msgid "Unknown server type requested, using standard server."
+msgstr "Požadován neznámý typ serveru, použiji standardní server."
+
+#: daemon/gdm.c:2674
+#, c-format
+msgid ""
+"Requested server %s not allowed to be used for flexible servers, using "
+"standard server."
+msgstr ""
+"Požadovaný server %s nesmí být použit s flexibilními servery, použiji "
+"standardní server."
+
+#. Translators, don't translate the 'y' and 'n'
+#: daemon/misc.c:491
+msgid "y = Yes or n = No? >"
+msgstr "y = Ano, n = Ne? >"
+
+#: daemon/misc.c:775
+#, c-format
+msgid "%s: Cannot get local addresses!"
+msgstr "%s: Nelze získat lokální adresy!"
+
+#: daemon/misc.c:890
+#, c-format
+msgid "Could not setgid %d. Aborting."
+msgstr "Nelze nastavit setgid %d. Končím."
+
+#: daemon/misc.c:895
+#, c-format
+msgid "initgroups() failed for %s. Aborting."
+msgstr "initgroups() selhal pro %s. Končím."
+
+#: daemon/server.c:255
+#, c-format
+msgid ""
+"There already appears to be an X server running on display %s.  Should I try "
+"another display number?  If you answer no, I will attempt to start the "
+"server on %s again.%s"
+msgstr ""
+"Vypadá to že na displeji %s již jeden X server běží.  Mám zkusit jiný "
+"displej?  Jestliže ne zkusím displej %s znovu.%s"
+
+#: daemon/server.c:262
+msgid ""
+"  (You can change consoles by pressing Ctrl-Alt plus a function key, such as "
+"Ctrl-Alt-F7 to go to console 7.  X servers usually run on consoles 7 and "
+"higher.)"
+msgstr ""
+"  (Můžete přepínat mezi konzolami stiskem kláves Ctrl+Alt plus funkční "
+"klávesa, například Ctrl+Alt+F7 vás přepne na konzoli 7. Servery X obvykle "
+"běží na konzoli 7 a vyšších)."
+
+#: daemon/server.c:301
+#, c-format
+msgid "Display '%s' cannot be opened by Xnest"
+msgstr "Displej '%s' nemůže být otevřen programem Xnest"
+
+#: daemon/server.c:331
+#, c-format
+msgid "Display %s is busy. There is another X server running already."
+msgstr "Displej %s je již obsazen jiným X serverem."
+
+#: daemon/server.c:458
+#, c-format
+msgid "%s: Error opening a pipe: %s"
+msgstr "%s: Chyba při otevírání roury: %s"
+
+#: daemon/server.c:470
+#, c-format
+msgid "%s: Error setting up USR1 signal handler: %s"
+msgstr "%s: Chyba při nastavování zpracování signálu USR1: %s"
+
+#: daemon/server.c:483 daemon/slave.c:291
+#, c-format
+msgid "%s: Error setting up CHLD signal handler: %s"
+msgstr "%s: Chyba při nastavování zpracování signálu CHLD: %s"
+
+#: daemon/server.c:497 daemon/slave.c:267
+#, c-format
+msgid "%s: Error setting up ALRM signal handler: %s"
+msgstr "%s: Chyba při nastavování zpracování signálu ALRM: %s"
+
+#. Send X too busy
+#: daemon/server.c:700
+#, c-format
+msgid "%s: Cannot find a free display number"
+msgstr "%s: Nelze nalézt volné číslo displeje"
+
+#: daemon/server.c:715
+#, c-format
+msgid "%s: Display %s busy.  Trying another display number."
+msgstr "%s: Displej %s je zaneprázdněný. Zkuste jiné číslo displeje."
+
+#: daemon/server.c:787
+#, c-format
+msgid "Invalid server command '%s'"
+msgstr "Neplatný příkaz serveru '%s'"
+
+#: daemon/server.c:792
+#, c-format
+msgid "Server name '%s' not found, using standard server"
+msgstr "Server jménem '%s' nebyl nalezen, použiji standardní server"
+
+#: daemon/server.c:939
+#, c-format
+msgid "gdm_server_spawn: Could not open logfile for display %s!"
+msgstr "gdm_server_spawn: Nelze otevřít záznamový soubor pro displej %s!"
+
+#: daemon/server.c:949
+msgid "gdm_server_spawn: Error setting USR1 to SIG_IGN"
+msgstr "gdm_server_spawn: Chyba při nastavování USR1 na SIG_IGN"
+
+#: daemon/server.c:953
+msgid "gdm_server_spawn: Error setting TTIN to SIG_IGN"
+msgstr "gdm_server_spawn: Chyba při nastavování TTIN na SIG_IGN"
+
+#: daemon/server.c:957
+msgid "gdm_server_spawn: Error setting TTOU to SIG_IGN"
+msgstr "gdm_server_spawn: Chyba při nastavování TTOU na SIG_IGN"
+
+#: daemon/server.c:967
+msgid "gdm_server_spawn: Error setting HUP to SIG_DFL"
+msgstr "gdm_server_spawn: Chyba při nastavování HUP na SIG_DFL"
+
+#: daemon/server.c:971
+msgid "gdm_server_spawn: Error setting TERM to SIG_DFL"
+msgstr "gdm_server_spawn: Chyba při nastavování TERM na SIG_DFL"
+
+#: daemon/server.c:1004
+#, c-format
+msgid "%s: Empty server command for display %s"
+msgstr "%s: Prázdný příkaz serveru pro displej %s"
+
+#: daemon/server.c:1018
+#, c-format
+msgid "%s: Server was to be spawned by uid %d but that user doesn't exist"
+msgstr ""
+"%s: Server měl být spuštěný pod uživatelem (uid) %d, ale takový uživatel "
+"neexistuje"
+
+#: daemon/server.c:1033 daemon/slave.c:1483 daemon/slave.c:1849
+#, c-format
+msgid "%s: Couldn't set groupid to %d"
+msgstr "%s: Nelze nastavit groupid na %d"
+
+#: daemon/server.c:1039 daemon/slave.c:1488 daemon/slave.c:1854
+#, c-format
+msgid "%s: initgroups() failed for %s"
+msgstr "%s: initgroups() selhalo pro %s"
+
+#: daemon/server.c:1045 daemon/slave.c:1493 daemon/slave.c:1859
+#, c-format
+msgid "%s: Couldn't set userid to %d"
+msgstr "%s: Nelze nastavit userid na %d"
+
+#: daemon/server.c:1052
+#, c-format
+msgid "%s: Couldn't set groupid to 0"
+msgstr "%s: Nelze nastavit groupid na 0"
+
+#: daemon/server.c:1063
+#, c-format
+msgid "gdm_server_spawn: Xserver not found: %s"
+msgstr "gdm_server_spawn: Xserver nenalezen: %s"
+
+#: daemon/server.c:1070
+msgid "gdm_server_spawn: Can't fork Xserver process!"
+msgstr "gdm_server_spawn: Nelze větvit proces Xserveru!"
+
+#: daemon/slave.c:281
+#, c-format
+msgid "%s: Error setting up TERM/INT signal handler: %s"
+msgstr "%s: Chyba při nastavování zpracování signálu TERM/INT: %s"
+
+#: daemon/slave.c:301
+#, c-format
+msgid "%s: Error setting up USR2 signal handler: %s"
+msgstr "%s: Chyba při nastavování zpracování signálu USR2: %s"
+
+#: daemon/slave.c:512
+msgid ""
+"I could not start the X\n"
+"server (your graphical environment)\n"
+"due to some internal error.\n"
+"Please contact your system administrator\n"
+"or check your syslog to diagnose.\n"
+"In the meantime this display will be\n"
+"disabled.  Please restart gdm when\n"
+"the problem is corrected."
+msgstr ""
+"Nemohl jsem spustit server\n"
+"X (vaše grafické prostředí)\n"
+"díky interní chybě.\n"
+"Kontaktujte prosím vašeho správce\n"
+"systému nebo se podívejte do záznamových\n"
+"souborů. Mezitím bude tento displej\n"
+"vypnutý. Pokud problém vyřešíte, spusťte\n"
+"znovu program GDM."
+
+#: daemon/slave.c:737
+msgid "focus_first_x_window: cannot fork"
+msgstr "focus_first_x_window: nelze větvit"
+
+#: daemon/slave.c:761
+#, c-format
+msgid "focus_first_x_window: cannot open display %s"
+msgstr "focus_first_x_window: nelze otevřít displej %s"
+
+#: daemon/slave.c:901
+msgid ""
+"Could not execute the configuration\n"
+"program.  Make sure it's path is set\n"
+"correctly in the configuration file.\n"
+"I will attempt to start it from the\n"
+"default location."
+msgstr ""
+"Nelze spustit aplikaci pro nastavení.\n"
+"Zkontrolujte že je správně nastavena\n"
+"cesta v souboru s nastavením.\n"
+"Pokusím se ji spustit z implicitního\n"
+"umístění."
+
+#: daemon/slave.c:915
+msgid ""
+"Could not execute the configuration\n"
+"program.  Make sure it's path is set\n"
+"correctly in the configuration file."
+msgstr ""
+"Nelze spustit aplikaci pro nastavení.\n"
+"Zkontrolujte že je správně nastavena\n"
+"cesta v souboru s nastavením."
+
+#: daemon/slave.c:1032
+msgid ""
+"Enter the root password\n"
+"to run the configuration."
+msgstr ""
+"Pro start nastavení vložte\n"
+"heslo uživatele root."
+
+#: daemon/slave.c:1055 daemon/slave.c:1139
+msgid "gdm_slave_wait_for_login: No login/Bad login"
+msgstr "gdm_slave_wait_for_login: Nepřihlášený nebo špatně přihlášený"
+
+#: daemon/slave.c:1445
+#, c-format
+msgid "%s: Can't init pipe to gdmgreeter"
+msgstr "%s: Nelze vytvořit rouru k programu gdmgreeter"
+
+#: daemon/slave.c:1560
+msgid ""
+"No servers were defined in the\n"
+"configuration file and XDMCP was\n"
+"disabled.  This can only be a\n"
+"configuration error.  So I have started\n"
+"a single server for you.  You should\n"
+"log in and fix the configuration.\n"
+"Note that automatic and timed logins\n"
+"are disabled now."
+msgstr ""
+"V souborech s nastavením nebyly\n"
+"definovány žádné servery a protokol\n"
+"XDMCP byl vypnut. Tento stav může\n"
+"nastat pouze díky chybnému nastavení.\n"
+"Spustil jsem tedy pouze jediný server.\n"
+"Měl byste se přihlásit a opravit vaše\n"
+"nastavení. Automatická a načasovaná\n"
+"přihlašování jsou nyní vypnuta."
+
+#: daemon/slave.c:1574
+msgid ""
+"I could not start the regular X\n"
+"server (your graphical environment)\n"
+"and so this is a failsafe X server.\n"
+"You should log in and properly\n"
+"configure the X server."
+msgstr ""
+"Nebylo možné spustit běžný X server\n"
+"(vaše grafické prostředí), a tak teď\n"
+"běží záchranný X server.\n"
+"Měl byste se přihlásit a provést\n"
+"řádné nastavení vašeho X serveru."
+
+#: daemon/slave.c:1583
+#, c-format
+msgid ""
+"The specified display number was busy, so this server was started on display "
+"%s."
+msgstr ""
+"Zadané číslo displeje bylo již obsazeno, proto byl tento server spuštěn na "
+"displeji %s."
+
+#: daemon/slave.c:1596
+#, c-format
+msgid "gdm_slave_greeter: Cannot start greeter trying default: %s"
+msgstr ""
+"gdm_slave_greeter: Nelze spustit program pro přivítání, zkouším výchozí: %s"
+
+#: daemon/slave.c:1608
+msgid ""
+"Cannot start the greeter program,\n"
+"you will not be able to log in.\n"
+"This display will be disabled.\n"
+"Try logging in by other means and\n"
+"editing the configuration file"
+msgstr ""
+"Nelze spustit program pro přivítání,\n"
+"nebude možné se přihlásit.\n"
+"Tento displej bude vypnut.\n"
+"Zkuste se přihlásit jiným způsobem\n"
+"a opravit váš soubor s nastavením."
+
+#: daemon/slave.c:1614
+#, c-format
+msgid "%s: Error starting greeter on display %s"
+msgstr "%s: Chyba při spouštění programu pro přivítání na displeji %s"
+
+#: daemon/slave.c:1618
+#, c-format
+msgid "%s: Can't fork gdmgreeter process"
+msgstr "%s: Nelze větvit proces gdmgreeter"
+
+#: daemon/slave.c:1685 daemon/slave.c:1784
+#, c-format
+msgid "%s: Can't open fifo!"
+msgstr "%s: Nelze otevřít FIFO!"
+
+#: daemon/slave.c:1810
+msgid "gdm_slave_chooser: Can't init pipe to gdmchooser"
+msgstr "gdm_slave_chooser: Nelze otevřít rouru do programu gdmchooser"
+
+#: daemon/slave.c:1895
+msgid ""
+"Cannot start the chooser program,\n"
+"you will not be able to log in.\n"
+"Please contact the system administrator.\n"
+msgstr ""
+"Nelze spustit program pro výběr,\n"
+"nebude možné se přihlásit.\n"
+"Prosím, kontaktujte správce systému.\n"
+
+#: daemon/slave.c:1899
+#, c-format
+msgid "gdm_slave_chooser: Error starting chooser on display %s"
+msgstr ""
+"gdm_slave_chooser: Chyba při spouštění programu pro výběr na displeji %s"
+
+#: daemon/slave.c:1902
+msgid "gdm_slave_chooser: Can't fork gdmchooser process"
+msgstr "gdm_slave_chooser: Nelze větvit proces gdmchooser"
+
+#. open stdout - fd 1
+#. open stderr - fd 2
+#: daemon/slave.c:2253
+#, c-format
+msgid "%s: Could not open ~/.xsession-errors"
+msgstr "%s: Nelze otevřít ~/.xsession-errors"
+
+#: daemon/slave.c:2275
+msgid ""
+"gdm_slave_session_start: Execution of PreSession script returned > 0. "
+"Aborting."
+msgstr ""
+"gdm_slave_session_start: Spuštění skriptu PreSession vrátilo hodnotu > 0. "
+"Končím."
+
+#: daemon/slave.c:2308
+#, c-format
+msgid "Language %s does not exist, using %s"
+msgstr "Jazyk %s neexistuje, použije se %s"
+
+#: daemon/slave.c:2309 gui/gdmlogin.c:1114 gui/gdmlogin.c:1123
+#: gui/gdmlogin.c:1661 gui/greeter/greeter_action_language.c:52
+#: gui/greeter/greeter_action_language.c:138
+#: gui/greeter/greeter_action_language.c:146
+msgid "System default"
+msgstr "Systémové nastavení"
+
+#: daemon/slave.c:2321
+#, c-format
+msgid "%s: Could not setup environment for %s. Aborting."
+msgstr "%s: Nelze nastavit prostředí pro %s. Končím."
+
+#: daemon/slave.c:2335
+#, c-format
+msgid "%s: setusercontext() failed for %s. Aborting."
+msgstr "%s: setusercontext() selhalo pro %s. Končím."
+
+#: daemon/slave.c:2341
+#, c-format
+msgid "gdm_slave_session_start: Could not become %s. Aborting."
+msgstr "gdm_slave_session_start: Nelze se stát %s. Končím."
+
+#. yaikes
+#: daemon/slave.c:2415
+msgid ""
+"gdm_slave_session_start: gnome-session not found for a failsafe gnome "
+"session, trying xterm"
+msgstr ""
+"gdm_slave_session_start: gnome-session pro záchranné sezení GNOME nebylo "
+"nalezeno, zkouším terminál XTerm"
+
+#: daemon/slave.c:2419
+msgid ""
+"Could not find the GNOME installation,\n"
+"will try running the \"Failsafe xterm\"\n"
+"session."
+msgstr ""
+"Nemohu najít instalaci GNOME,\n"
+"zkusím sezení \"Záchranný XTerm\"."
+
+#: daemon/slave.c:2425
+msgid ""
+"This is the Failsafe Gnome session.\n"
+"You will be logged into the 'Default'\n"
+"session of Gnome with no startup scripts\n"
+"run.  This is only to fix problems in\n"
+"your installation."
+msgstr ""
+"Toto je záchranné sezení prostředí GNOME.\n"
+"Budete přihlášen(a) do Výchozího\n"
+"sezení prostředí GNOME, startovací skripty\n"
+"nebudou spuštěny. Toto je jen k\n"
+"opravení problémů s vaší instalací."
+
+#: daemon/slave.c:2446
+msgid "Cannot find \"xterm\" to start a failsafe session."
+msgstr "Nemohu najít \"xterm\" ke spuštění záchranného sezení."
+
+#: daemon/slave.c:2453
+msgid ""
+"This is the Failsafe xterm session.\n"
+"You will be logged into a terminal\n"
+"console so that you may fix your system\n"
+"if you cannot log in any other way.\n"
+"To exit the terminal emulator, type\n"
+"'exit' and an enter into the window."
+msgstr ""
+"Toto je záchranné sezení XTerm.\n"
+"Budete přihlášen(a) do konzole\n"
+"terminálu abyste mohl(a) opravit\n"
+"váš systém pokud se nemůžete přihlásit\n"
+"nijak jinak.  K opuštění terminálu,\n"
+"napište příkaz 'exit' a stiskněte klávesu\n"
+"Enter v okně terminálu."
+
+#: daemon/slave.c:2481
+#, c-format
+msgid "Running %s for %s on %s"
+msgstr "Spouštím %s pro %s na %s"
+
+#: daemon/slave.c:2495
+msgid "gdm_slave_session_start: User not allowed to log in"
+msgstr "gdm_slave_session_start: Uživateli nebylo povoleno přihlášení"
+
+#: daemon/slave.c:2497
+msgid ""
+"The system administrator has\n"
+"disabled your account."
+msgstr ""
+"Správce systému\n"
+"vypnul váš účet."
+
+#: daemon/slave.c:2500
+#, c-format
+msgid "gdm_slave_session_start: Could not find/run session `%s'"
+msgstr "gdm_slave_session_start: Nelze nalézt nebo spustit sezení `%s'"
+
+#: daemon/slave.c:2505
+msgid ""
+"Cannot start the session, most likely the\n"
+"session does not exist.  Please select from\n"
+"the list of available sessions in the login\n"
+"dialog window."
+msgstr ""
+"Nelze spustit sezení, pravděpodobně\n"
+"proto, že takové sezení neexistuje. Vyberte\n"
+"prosím z výčtu dostupných sezení, který je\n"
+"k dispozici v dialogovém okně pro přihlášení."
+
+#: daemon/slave.c:2539
+#, c-format
+msgid "gdm_slave_session_start: Could not start session `%s'"
+msgstr "gdm_slave_session_start: Nelze spustit sezení `%s'"
+
+#: daemon/slave.c:2542
+msgid ""
+"Cannot start your shell.  It could be that the\n"
+"system administrator has disabled your login.\n"
+"It could also indicate an error with your account.\n"
+msgstr ""
+"Nelze spustit váš shell. Může to být tím,\n"
+"že správce systému zakázal vaše přihlášení.\n"
+"Může to také nasvědčovat chybě vašeho účtu.\n"
+
+#: daemon/slave.c:2576
+#, c-format
+msgid "gdm_slave_session_start: User passed auth but getpwnam(%s) failed!"
+msgstr ""
+"gdm_slave_session_start: Uživatel prošel ověřením, ale volání getpwnam(%s) "
+"selhalo!"
+
+#: daemon/slave.c:2582
+#, c-format
+msgid ""
+"Your home directory is listed as:\n"
+"'%s'\n"
+"but it does not appear to exist.\n"
+"Do you want to log in with the root\n"
+"directory as your home directory?\n"
+"\n"
+"It is unlikely anything will work unless\n"
+"you use a failsafe session."
+msgstr ""
+"Váš domovský adresář je uveden jako:\n"
+"'%s'\n"
+"ale zdá se, že neexistuje.\n"
+"Chcete se přihlásit s tím, že vaším domovským\n"
+"adresářem bude adresář kořenový?\n"
+"\n"
+"V takovém případě asi nebude nic fungovat,\n"
+"ledaže použijete záchranné sezení."
+
+#: daemon/slave.c:2590
+#, c-format
+msgid "%s: Home directory for %s: '%s' does not exist!"
+msgstr "%s: Domácí adresář pro %s: '%s' neexistuje."
+
+#: daemon/slave.c:2756
+msgid ""
+"GDM could not write to your authorization\n"
+"file.  This could mean that you are out of\n"
+"disk space or that your home directory could\n"
+"not be opened for writing.  In any case, it\n"
+"is not possible to log in.  Please contact\n"
+"your system administrator"
+msgstr ""
+"Nebylo možné zapisovat do vašeho souboru\n"
+"s ověřením. To může znamenat, že nemáte\n"
+"volné místo na disku, nebo že váš domovský adresář\n"
+"nelze otevřít pro zápis. V každém případě není\n"
+"možné se přihlásit. Kontaktujte prosím svého správce\n"
+"systému."
+
+#: daemon/slave.c:2790
+msgid "gdm_slave_session_start: Error forking user session"
+msgstr "gdm_slave_session_start: Chyba při větvení uživatelského sezení"
+
+#: daemon/slave.c:2848
+msgid ""
+"Your session only lasted less then\n"
+"10 seconds.  If you have not logged out\n"
+"yourself, this could mean that there is\n"
+"some installation problem or that you may\n"
+"be out of diskspace.  Try logging in with\n"
+"one of the failsafe sessions to see if you\n"
+"can fix this problem."
+msgstr ""
+"Vaše sezení trvalo méně než\n"
+"10 sekund. Pokud jste se neodhlásil sám,\n"
+"může to znamenal problém s instalací nebo že\n"
+"nemáte volné místo na disku. Pokud chcete zkusit tento problém vyřešit, "
+"zkuste\n"
+"se přihlásit pod jedním ze záchranných\n"
+"sezení."
+
+#: daemon/slave.c:2856
+msgid "View details (~/.xsession-errors file)"
+msgstr "Prohlídnout detaily (soubor ~/.xsession-errors)"
+
+#: daemon/slave.c:2990
+#, c-format
+msgid "Ping to %s failed, whacking display!"
+msgstr "Ping na %s selhal, ruším displej!"
+
+#: daemon/slave.c:3190
+#, c-format
+msgid "gdm_slave_xioerror_handler: Fatal X error - Restarting %s"
+msgstr "gdm_slave_xioerror_handler: Fatální chyba X - Restartuji %s"
+
+#: daemon/slave.c:3550
+#, c-format
+msgid "gdm_slave_exec_script: Failed starting: %s"
+msgstr "gdm_slave_exec_script: Selhalo spuštění: %s"
+
+#: daemon/slave.c:3558
+msgid "gdm_slave_exec_script: Can't fork script process!"
+msgstr "gdm_slave_exec_script: Nelze větvit proces se skriptem!"
+
+#: daemon/slave.c:3652
+msgid "gdm_parse_enriched_login: Failed creating pipe"
+msgstr "gdm_parse_enriched_login: Nelze vytvořit roura"
+
+#: daemon/slave.c:3680
+#, c-format
+msgid "gdm_parse_enriched_login: Failed executing: %s"
+msgstr "gdm_parse_enriched_login: Chyba při spouštění: %s"
+
+#: daemon/slave.c:3685
+msgid "gdm_parse_enriched_login: Can't fork script process!"
+msgstr "gdm_parse_enriched_login: Nelze větvit proces se skriptem!"
+
+#. Ask gdmgreeter for the user's login. Just for good measure
+#: daemon/verify-crypt.c:71 daemon/verify-pam.c:319 daemon/verify-shadow.c:70
+#: gui/gdmlogin.c:3339
+msgid "Please enter your username"
+msgstr "Zadejte své uživatelské jméno"
+
+#: daemon/verify-crypt.c:72 daemon/verify-pam.c:320 daemon/verify-shadow.c:71
+#: gui/gdmlogin.c:3297 gui/greeter/greeter_parser.c:961
+#: gui/greeter/themes/circles/circles.xml.in.h:5
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:5
+msgid "Username:"
+msgstr "Uživatel:"
+
+#: daemon/verify-crypt.c:96 daemon/verify-shadow.c:105
+msgid "Password: "
+msgstr "Heslo: "
+
+#: daemon/verify-crypt.c:114 daemon/verify-pam.c:361 daemon/verify-pam.c:532
+#: daemon/verify-shadow.c:123
+msgid "Couldn't authenticate user"
+msgstr "Nemohu ověřit uživatele"
+
+#: daemon/verify-crypt.c:120 daemon/verify-crypt.c:140
+msgid ""
+"\n"
+"Incorrect username or password.  Letters must be typed in the correct case.  "
+"Please be sure the Caps Lock key is not enabled"
+msgstr ""
+"\n"
+"Nesprávné jméno uživatele či nesprávné heslo. Rozlišují se malá a velká "
+"písmena. Přesvědčte se, že klávesa Caps Lock není aktivní."
+
+#: daemon/verify-crypt.c:154 daemon/verify-pam.c:374
+#: daemon/verify-shadow.c:163
+#, c-format
+msgid "Root login disallowed on display '%s'"
+msgstr "Přihlašování jako root není na displeji '%s' dovoleno"
+
+#: daemon/verify-crypt.c:156 daemon/verify-shadow.c:165
+msgid "The system administrator is not allowed to login from this screen"
+msgstr "Správci systému není dovoleno se přihlásit z této obrazovky"
+
+#: daemon/verify-crypt.c:172 daemon/verify-shadow.c:181
+#, c-format
+msgid "User %s not allowed to log in"
+msgstr "Uživatel %s nemá dovoleno se přihlásit"
+
+#: daemon/verify-crypt.c:174 daemon/verify-pam.c:404 daemon/verify-pam.c:565
+#: daemon/verify-shadow.c:183
+msgid ""
+"\n"
+"The system administrator has disabled your account."
+msgstr ""
+"\n"
+"Správce systému vypnul váš účet."
+
+#: daemon/verify-crypt.c:189 daemon/verify-crypt.c:223 daemon/verify-pam.c:422
+#: daemon/verify-pam.c:582 daemon/verify-shadow.c:197
+#: daemon/verify-shadow.c:230
+#, c-format
+msgid "Cannot set user group for %s"
+msgstr "Nelze nastavit uživatelská skupina pro %s"
+
+#: daemon/verify-crypt.c:191 daemon/verify-crypt.c:226 daemon/verify-pam.c:424
+#: daemon/verify-pam.c:585 daemon/verify-shadow.c:199
+#: daemon/verify-shadow.c:233
+msgid ""
+"\n"
+"Cannot set your user group, you will not be able to log in, please contact "
+"your system administrator."
+msgstr ""
+"\n"
+"Nelze nastavit vaši uživatelskou skupinu, nebude možné vás přihlásit; "
+"kontaktujte prosím vašeho správce systému."
+
+#: daemon/verify-crypt.c:218 daemon/verify-shadow.c:225
+#, c-format
+msgid "Cannot get passwd structure for %s"
+msgstr "Nelze získat strukturu passwd pro %s"
+
+#: daemon/verify-pam.c:238
+msgid "Cannot setup pam handle with null login and/or display"
+msgstr ""
+"Nelze nastavit PAM handle s prázdným (null) přihlášením a/nebo displejem"
+
+#: daemon/verify-pam.c:252
+#, c-format
+msgid "Can't find /etc/pam.d/%s!"
+msgstr "Nemohu najít /etc/pam.d/%s!"
+
+#: daemon/verify-pam.c:259
+#, c-format
+msgid "Can't set PAM_TTY=%s"
+msgstr "Nemohu nastavit PAM_TTY=%s"
+
+#: daemon/verify-pam.c:266
+#, c-format
+msgid "Can't set PAM_RUSER=%s"
+msgstr "Nemohu nastavit PAM_RUSER=%s"
+
+#: daemon/verify-pam.c:274
+#, c-format
+msgid "Can't set PAM_RHOST=%s"
+msgstr "Nemohu nastavit PAM_RHOST=%s"
+
+#: daemon/verify-pam.c:377
+msgid ""
+"\n"
+"The system administrator is not allowed to login from this screen"
+msgstr ""
+"\n"
+"Správci systému není dovoleno přihlásit se z této obrazovky"
+
+#: daemon/verify-pam.c:393
+#, c-format
+msgid "Authentication token change failed for user %s"
+msgstr "Změna ověřovacího tokenu selhala pro uživatele %s"
+
+#: daemon/verify-pam.c:395
+msgid ""
+"\n"
+"The change of the authentication token failed. Please try again later or "
+"contact the system administrator."
+msgstr ""
+"\n"
+"Změna ověřovacího tokenu selhala. Prosím, zkuste to později znovu nebo "
+"kontaktujte svého správce systému."
+
+#: daemon/verify-pam.c:402 daemon/verify-pam.c:562
+#, c-format
+msgid "User %s no longer permitted to access the system"
+msgstr "Uživatel %s již nemá povolen přístup do systému"
+
+#: daemon/verify-pam.c:408 daemon/verify-pam.c:568
+#, c-format
+msgid "User %s not permitted to gain access at this time"
+msgstr "Uživatel %s nemá povolen přístup v tuto dobu"
+
+#: daemon/verify-pam.c:410
+msgid ""
+"\n"
+"The system administrator has disabled access to the system temporarily."
+msgstr ""
+"\n"
+"Správce systému vypnul dočasně váš účet."
+
+#: daemon/verify-pam.c:415 daemon/verify-pam.c:575
+#, c-format
+msgid "Couldn't set acct. mgmt for %s"
+msgstr "Nelze nastavit správu účtu (acct. mgmt.) pro %s"
+
+#: daemon/verify-pam.c:434 daemon/verify-pam.c:595
+#, c-format
+msgid "Couldn't set credentials for %s"
+msgstr "Nelze nastavit pověření pro %s"
+
+#: daemon/verify-pam.c:444 daemon/verify-pam.c:606
+#, c-format
+msgid "Couldn't open session for %s"
+msgstr "Nelze otevřít sezení pro %s"
+
+#: daemon/verify-pam.c:470 daemon/verify-shadow.c:129
+#: daemon/verify-shadow.c:149
+msgid ""
+"\n"
+"Incorrect username or password. Letters must be typed in the correct case. "
+"Please make sure the Caps Lock key is not enabled."
+msgstr ""
+"\n"
+"Nesprávné jméno uživatele či nesprávné heslo. Rozlišují se malá a velká "
+"písmena. Přesvědčte se, že klávesa Caps Lock není aktivní."
+
+#: daemon/verify-pam.c:475 daemon/verify-pam.c:535
+msgid "Authentication failed"
+msgstr "Ověření selhalo"
+
+#: daemon/verify-pam.c:520 gui/gdmsetup-strings.c:19 gui/gdmsetup.glade.h:10
+msgid "Automatic login"
+msgstr "Automatické přihlášení"
+
+#: daemon/verify-pam.c:571
+msgid ""
+"\n"
+"The system administrator has disabled your access to the system temporary."
+msgstr ""
+"\n"
+"Správce systému dočasně znemožnil váš přístup do systému."
+
+#: daemon/verify-pam.c:698 daemon/verify-pam.c:700
+msgid "Can't find PAM configuration for gdm."
+msgstr "Nelze nalézt nastavení PAM pro program GDM."
+
+#: daemon/xdmcp.c:244
+#, c-format
+msgid "gdm_xdmcp_init: Could not get server hostname: %s!"
+msgstr "gdm_xdmcp_init: Nelze získat kanonické jméno serveru: %s!"
+
+#: daemon/xdmcp.c:264
+msgid "gdm_xdmcp_init: Could not create socket!"
+msgstr "gdm_xdmcp_init: Nelze vytvořit soket!"
+
+#: daemon/xdmcp.c:274
+msgid "gdm_xdmcp_init: Could not bind to XDMCP socket!"
+msgstr "gdm_xdmcp_init: Nelze otevřít soket protokolu XDMCP!"
+
+#: daemon/xdmcp.c:333
+msgid "gdm_xdmcp_decode: Could not create XDMCP buffer!"
+msgstr "gdm_xdmcp_decode: Nelze vytvořit buffer pro protokol XDMCP!"
+
+#: daemon/xdmcp.c:338
+msgid "gdm_xdmcp_decode: Could not read XDMCP header!"
+msgstr "gdm_xdmcp_decode: Nelze načíst hlavičku protokolu XDMCP!"
+
+#: daemon/xdmcp.c:344
+msgid "gdm_xdmcp_decode: Incorrect XDMCP version!"
+msgstr "gdm_xdmcp_decode: Špatná verze protokolu XDMCP!"
+
+#: daemon/xdmcp.c:397
+#, c-format
+msgid "gdm_xdmcp_decode_packet: Unknown opcode from host %s"
+msgstr "gdm_xdmcp_decode_packet: Neznámá instrukce (opcode) ze systému %s"
+
+#: daemon/xdmcp.c:416
+msgid "gdm_xdmcp_handle_query: Could not extract authlist from packet"
+msgstr "gdm_xdmcp_handle_query: Nelze získat authlist z paketu"
+
+#: daemon/xdmcp.c:428
+msgid "gdm_xdmcp_handle_query: Error in checksum"
+msgstr "gdm_xdmcp_handle_query: Chyba v kontrolním součtu"
+
+#: daemon/xdmcp.c:671
+msgid "gdm_xdmcp_handle_forward_query: Could not read display address"
+msgstr "gdm_xdmcp_handle_forward_query: Nelze číst adresu displeje"
+
+#: daemon/xdmcp.c:678
+msgid "gdm_xdmcp_handle_forward_query: Could not read display port number"
+msgstr "gdm_xdmcp_handle_forward_query: Nelze číst číslo portu displeje"
+
+#: daemon/xdmcp.c:686
+msgid "gdm_xdmcp_handle_forward_query: Could not extract authlist from packet"
+msgstr "gdm_xdmcp_handle_forward_query: Z paketu nelze získat authlist"
+
+#: daemon/xdmcp.c:702
+msgid "gdm_xdmcp_handle_forward_query: Error in checksum"
+msgstr "gdm_xdmcp_handle_forward_query: Chyba v kontrolním součtu"
+
+#: daemon/xdmcp.c:708
+msgid "gdm_xdmcp_handle_forward_query: Bad address"
+msgstr "gdm_xdmcp_handle_forward_query: Chybná adresa"
+
+#: daemon/xdmcp.c:816
+#, c-format
+msgid "Denied XDMCP query from host %s"
+msgstr "Odepřen dotaz protokolem XDMCP počítačem %s"
+
+#: daemon/xdmcp.c:962
+#, c-format
+msgid "gdm_xdmcp_handle_request: Got REQUEST from banned host %s"
+msgstr "gdm_xdmcp_handle_request: Obdržen REQUEST ze zakázaného počítače %s"
+
+#: daemon/xdmcp.c:969
+msgid "gdm_xdmcp_handle_request: Could not read Display Number"
+msgstr "gdm_xdmcp_handle_request: Nelze přečíst Display Number"
+
+#: daemon/xdmcp.c:975
+msgid "gdm_xdmcp_handle_request: Could not read Connection Type"
+msgstr "gdm_xdmcp_handle_request: Nelze přečíst Connection Type"
+
+#: daemon/xdmcp.c:981
+msgid "gdm_xdmcp_handle_request: Could not read Client Address"
+msgstr "gdm_xdmcp_handle_request: Nelze přečíst Client Address"
+
+#: daemon/xdmcp.c:988
+msgid "gdm_xdmcp_handle_request: Could not read Authentication Names"
+msgstr "gdm_xdmcp_handle_request: Nelze přečíst Authentication Names"
+
+#: daemon/xdmcp.c:996
+msgid "gdm_xdmcp_handle_request: Could not read Authentication Data"
+msgstr "gdm_xdmcp_handle_request: Nelze přečíst Authentication Data"
+
+#: daemon/xdmcp.c:1005
+msgid "gdm_xdmcp_handle_request: Could not read Authorization List"
+msgstr "gdm_xdmcp_handle_request: Nelze přečíst Authorization List"
+
+#: daemon/xdmcp.c:1020
+msgid "gdm_xdmcp_handle_request: Could not read Manufacturer ID"
+msgstr "gdm_xdmcp_handle_request: Nelze přečíst Manufacturer ID"
+
+#: daemon/xdmcp.c:1043
+#, c-format
+msgid "gdm_xdmcp_handle_request: Failed checksum from %s"
+msgstr "gdm_xdmcp_handle_request: Chybný kontrolní součet pro %s"
+
+#: daemon/xdmcp.c:1210
+#, c-format
+msgid "gdm_xdmcp_handle_manage: Got Manage from banned host %s"
+msgstr ""
+"gdm_xdmcp_handle_manage: Obdržen příkaz Manage ze zakázaného počítače %s"
+
+#: daemon/xdmcp.c:1217
+msgid "gdm_xdmcp_handle_manage: Could not read Session ID"
+msgstr "gdm_xdmcp_handle_manage: Nelze přečíst Session ID"
+
+#: daemon/xdmcp.c:1223
+msgid "gdm_xdmcp_handle_manage: Could not read Display Number"
+msgstr "gdm_xdmcp_handle_manage: Nelze přečíst Display Number"
+
+#: daemon/xdmcp.c:1232
+msgid "gdm_xdmcp_handle_manage: Could not read Display Class"
+msgstr "gdm_xdmcp_handle_manage: Nelze přečíst Display Class"
+
+#: daemon/xdmcp.c:1307 daemon/xdmcp.c:1313 daemon/xdmcp.c:1363
+#: daemon/xdmcp.c:1369
+#, c-format
+msgid "%s: Could not read address"
+msgstr "%s: Nelze přečíst adresu"
+
+#: daemon/xdmcp.c:1445
+#, c-format
+msgid "gdm_xdmcp_handle_keepalive: Got KEEPALIVE from banned host %s"
+msgstr ""
+"gdm_xdmcp_handle_keepalive: Obdržen příkaz KEEPALIVE ze zakázaného počítače %"
+"s"
+
+#: daemon/xdmcp.c:1452
+msgid "gdm_xdmcp_handle_keepalive: Could not read Display Number"
+msgstr "gdm_xdmcp_handle_keepalive: Nelze přečíst Display Number"
+
+#: daemon/xdmcp.c:1458
+msgid "gdm_xdmcp_handle_keepalive: Could not read Session ID"
+msgstr "gdm_xdmcp_handle_keepalive: Nelze přečíst Session ID"
+
+#: daemon/xdmcp.c:1661
+msgid "gdm_xdmcp_init: No XDMCP support"
+msgstr "gdm_xdmcp_init: Chybí podpora protokolu XDMCP"
+
+#: daemon/xdmcp.c:1668
+msgid "gdm_xdmcp_run: No XDMCP support"
+msgstr "gdm_xdmcp_run: Chybí podpora protokolu XDMCP"
+
+#: daemon/xdmcp.c:1674
+msgid "gdm_xdmcp_close: No XDMCP support"
+msgstr "gdm_xdmcp_close: Chybí podpora protokolu XDMCP"
+
+#: gui/gdmXnestchooser.c:114 gui/gdmXnestchooser.c:121
+msgid "Xnest command line"
+msgstr "Příkaz Xnest"
+
+#: gui/gdmXnestchooser.c:114 gui/gdmXnestchooser.c:121
+msgid "STRING"
+msgstr "ŘETĚZEC"
+
+#: gui/gdmXnestchooser.c:115 gui/gdmXnestchooser.c:122
+msgid "Extra options for Xnest"
+msgstr "Další volby pro Xnest"
+
+#: gui/gdmXnestchooser.c:115 gui/gdmXnestchooser.c:122
+msgid "OPTIONS"
+msgstr "VOLBY"
+
+#: gui/gdmXnestchooser.c:116 gui/gdmXnestchooser.c:126
+msgid "Run in background"
+msgstr "Běh na pozadí"
+
+#: gui/gdmXnestchooser.c:123
+msgid "Just run Xnest, no query (no chooser)"
+msgstr "Pouze spustit Xnest, bez otázek (žádný program pro výběr)"
+
+#: gui/gdmXnestchooser.c:124
+msgid "Do direct query instead of indirect (chooser)"
+msgstr "Přímá otázka místo nepřímé (program pro výběr)"
+
+#: gui/gdmXnestchooser.c:125
+msgid "Run broadcast instead of indirect (chooser)"
+msgstr "Spustit vysílání (broadcast) místo nepřímé otázky (program pro výběr)"
+
+#: gui/gdmXnestchooser.c:127
+msgid "Don't check for running gdm"
+msgstr "Nekontrolovat, zda-li již běží program GDM"
+
+#: gui/gdmXnestchooser.c:468
+msgid ""
+"Xnest doesn't exist.\n"
+"Please ask your system administrator\n"
+"to install it."
+msgstr ""
+"Server Xnest neexistuje.\n"
+"Požádejte prosím správce systému,\n"
+"aby jej doinstaloval."
+
+#: gui/gdmXnestchooser.c:493
+msgid ""
+"Indirect XDMCP is not enabled,\n"
+"please ask your system administrator to enable it\n"
+"in the GDM configurator program."
+msgstr ""
+"Nepřímé XDMCP není povoleno,\n"
+"řekněte prosím vašemu správci systému, aby jej\n"
+"zapnul v nastavení GDM."
+
+#: gui/gdmXnestchooser.c:522
+msgid ""
+"GDM is not running.\n"
+"Please ask your system administrator to start it."
+msgstr ""
+"GDM neběží. Řekněte prosím vašemu\n"
+"správci systému, aby jej spustil."
+
+#: gui/gdmXnestchooser.c:539
+msgid "Could not find a free display number"
+msgstr "Nenašel jsem volné číslo displeje"
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: gui/gdmchooser-strings.c:7 gui/gdmchooser.glade.h:3
+msgid "GDM Host Chooser"
+msgstr "GDM výběr připojení"
+
+#: gui/gdmchooser-strings.c:8 gui/gdmchooser.glade.h:4
+msgid "How to use this application"
+msgstr "Jak používat tuto aplikaci"
+
+#: gui/gdmchooser-strings.c:9 gui/gdmchooser.glade.h:6
+msgid "Open a session to the selected host"
+msgstr "Otevřít sezení na vybranému počítači"
+
+#. EOF
+#: gui/gdmchooser-strings.c:10 gui/gdmchooser.glade.h:1
+msgid "C_onnect"
+msgstr "Při_pojit se"
+
+#: gui/gdmchooser-strings.c:11 gui/gdmchooser.glade.h:7
+msgid "Probe the network"
+msgstr "Sondovat síť"
+
+#: gui/gdmchooser-strings.c:12 gui/gdmchooser.glade.h:2
+msgid "Exit the application"
+msgstr "Skončit tuto aplikaci"
+
+#: gui/gdmchooser-strings.c:13 gui/gdmchooser.glade.h:8
+msgid "Status"
+msgstr "Stav"
+
+#: gui/gdmchooser-strings.c:14 gui/gdmchooser.glade.h:9
+msgid ""
+"The main area of this application shows the hosts on the local network that "
+"have \"XDMCP\" enabled. This allows users to login remotely to other "
+"machines as if they were logged on using the console.\n"
+"\n"
+"You can rescan the network for new hosts by clicking \"Refresh\". When you "
+"have selected a host click \"Connect\" to open a session to that machine."
+msgstr ""
+"Hlavní část této aplikace ukazuje počítače na lokální síti, které mají "
+"povolený protokol \"XDMCP.\" Tento protokol umožňuje uživatelům přihlásit se "
+"k jiným počítačům vzdáleně tak, jako by se přihlásili pomocí konzole.\n"
+"\n"
+"Poklepnutím na tlačítko \"Sondovat síť\" můžete znovu prozkoumat síť a "
+"nalézt nové počítače. Poté, co jste nějaký počítač vybrali, stiskněte "
+"tlačítko \"Připojit se\" a tím otevřete na vybraném stroji nové sezení."
+
+#: gui/gdmchooser-strings.c:17 gui/gdmchooser.glade.h:5
+msgid "Information"
+msgstr "Informace"
+
+#: gui/gdmchooser.c:75
+msgid "Please wait: scanning local network for XDMCP-enabled hosts..."
+msgstr ""
+"Čekejte prosím: prohledávám lokální síť a hledám servery s podporou XDMCP..."
+
+#: gui/gdmchooser.c:76
+msgid "No serving hosts were found."
+msgstr "Žádné servery nenalezeny."
+
+#: gui/gdmchooser.c:77
+msgid "Choose a host to connect to from the selection below."
+msgstr "Vyberte server, ke kterému se chcete připojit, z výčtu dole."
+
+#: gui/gdmchooser.c:871
+msgid ""
+"The main area of this application shows the hosts on the local network that "
+"have \"XDMCP\" enabled. This allows users to login remotely to other "
+"machines as if they were logged on using the console.\n"
+"\n"
+"You can rescan the network for new hosts by clicking \"Refresh\".  When you "
+"have selected a host click \"Connect\" to open a session to that machine."
+msgstr ""
+"Hlavní část této aplikace ukazuje počítače na lokální síti, které mají "
+"povolený protokol \"XDMCP.\" Tento protokol umožňuje uživatelům přihlásit se "
+"k jiným počítačům vzdáleně tak, jako by se přihlásili pomocí konzole.\n"
+"\n"
+"Poklepnutím na tlačítko \"Sondovat síť\" můžete znovu prozkoumat síť a "
+"nalézt nové počítače. Poté, co jste nějaký počítač vybrali, stiskněte "
+"tlačítko \"Připojit se\" a tím otevřete na vybraném stroji nové sezení."
+
+#: gui/gdmchooser.c:899
+#, c-format
+msgid "Can't open default host icon: %s"
+msgstr "Nelze otevřít výchozí ikonu pro počítač: %s"
+
+#: gui/gdmchooser.c:955
+msgid "gdm_signals_init: Error setting up HUP signal handler"
+msgstr "gdm_signals_init: Chyba při nastavování zpracování signálu HUP"
+
+#: gui/gdmchooser.c:958
+msgid "gdm_signals_init: Error setting up INT signal handler"
+msgstr "gdm_signals_init: Chyba při nastavování zpracování signálu INT"
+
+#: gui/gdmchooser.c:961
+msgid "gdm_signals_init: Error setting up TERM signal handler"
+msgstr "gdm_signals_init: Chyba při nastavování zpracování signálu TERM"
+
+#: gui/gdmchooser.c:969 gui/gdmlogin.c:4227 gui/greeter/greeter.c:1075
+msgid "Could not set signal mask!"
+msgstr "Nelze nastavit masku signálů!"
+
+#: gui/gdmchooser.c:975
+msgid "Socket for xdm communication"
+msgstr "Soket pro komunikaci xdm"
+
+#: gui/gdmchooser.c:975
+msgid "SOCKET"
+msgstr "SOKET"
+
+#: gui/gdmchooser.c:978
+msgid "Client address to return in response to xdm"
+msgstr "Klientská adresa vrácená jako odpověď xdm"
+
+#: gui/gdmchooser.c:978
+msgid "ADDRESS"
+msgstr "ADRESA"
+
+#: gui/gdmchooser.c:981
+msgid "Connection type to return in response to xdm"
+msgstr "Typ spojení vrácený jako odpověď xdm"
+
+#: gui/gdmchooser.c:981
+msgid "TYPE"
+msgstr "TYP"
+
+#: gui/gdmchooser.c:1101
+#, c-format
+msgid ""
+"The chooser version (%s) does not match the daemon version (%s).\n"
+"You have probably just upgraded gdm.\n"
+"Please restart the gdm daemon or reboot the computer."
+msgstr ""
+"Verze programu pro výběr (%s) neodpovídá verzi démona (%s).\n"
+"Pravděpodobně jste právě aktualizovali program GDM.\n"
+"Restartujte prosím démona GDM nebo restartujte počítač."
+
+#: gui/gdmcomm.c:395 gui/gdmphotosetup.c:68
+msgid ""
+"<b>GDM (The GNOME Display Manager) is not running.</b>\n"
+"\n"
+"You might in fact be using a different display manager, such as KDM (KDE "
+"Display Manager or xdm).\n"
+"If you still wish to use this feature, either start GDM your self or ask "
+"your system administrator to start GDM."
+msgstr ""
+"<b>GDM (správce displeje GNOME) neběží.</b>\n"
+"\n"
+"Možná ve skutečnosti používáte jiného správce displeje, např. KDM (správce "
+"displeje KDE) nebo  xdm.\n"
+"Pokud si stále přejete použít tuto možnost, buď spusťte GDM sami, nebo o to "
+"požádejte svého správce systému."
+
+#: gui/gdmcomm.c:417
+msgid ""
+"Cannot communicate with GDM (The GNOME Display Manager), perhaps you have an "
+"old version running."
+msgstr ""
+"Nemohu komunikovat s GDM (správcem displeje GNOME), možná máte spuštěnou "
+"starou verzi."
+
+#: gui/gdmcomm.c:435 gui/gdmcomm.c:438 gui/gdmflexiserver.c:252
+msgid "Cannot communicate with gdm, perhaps you have an old version running."
+msgstr "Nelze komunikovat s programem GDM, možná máte spuštěnou starou verzi."
+
+#: gui/gdmcomm.c:441
+msgid "The allowed limit of flexible X servers reached."
+msgstr "Povolený limit pro flexibilní X servery byl dosažen."
+
+#: gui/gdmcomm.c:443
+msgid "There were errors trying to start the X server."
+msgstr "Při spouštění X serveru nastaly chyby."
+
+#: gui/gdmcomm.c:445
+msgid "The X server failed.  Perhaps it is not configured well."
+msgstr "X server selhal. Možná je špatně nastaven."
+
+#: gui/gdmcomm.c:448
+msgid "Too many X sessions running."
+msgstr "Běží již příliš mnoho sezení serveru X."
+
+#: gui/gdmcomm.c:450
+msgid ""
+"The nested X server (Xnest) cannot connect to your current X server.  You "
+"may be missing an X authorization file."
+msgstr ""
+"Vnořený X server (Xnest) se nemůže spojit s vaším současným X serverem. "
+"Možná vám chybí soubor s ověřením pro X."
+
+#: gui/gdmcomm.c:455
+msgid ""
+"The nested X server (Xnest) is not available, or gdm is badly configured.\n"
+"Please install the Xnest package in order to use the nested login."
+msgstr ""
+"Vnořený X server (Xnest) není k dispozici, nebo je program GDM špatně "
+"nastaven.\n"
+"Pokud chcete používat vnořené přihlášení, nainstalujte prosím balíček se "
+"serverem Xnest."
+
+#: gui/gdmcomm.c:460
+msgid ""
+"The X server is not available, it is likely that gdm is badly configured."
+msgstr ""
+"Server X není k dispozici, je pravděpodobné že program GDM je špatně "
+"nastaven."
+
+#: gui/gdmcomm.c:464
+msgid "Trying to update an unsupported configuration key."
+msgstr "Pokus o aktualizaci nepodporovaného klíče v nastavení."
+
+#: gui/gdmcomm.c:466
+msgid ""
+"You do not seem to have authentication needed be for this operation.  "
+"Perhaps your .Xauthority file is not set up correctly."
+msgstr ""
+"Zdá se, že nedisponujete oprávněním pro tuto operaci.  Možná je váš soubor ."
+"Xauthority špatně nastaven."
+
+#: gui/gdmcomm.c:470
+msgid "Unknown error occured."
+msgstr "Nastala neznámá chyba."
+
+#: gui/gdmflexiserver-xnest.desktop.in.h:1
+msgid "Log in as another user inside a nested window"
+msgstr "Přihlásit se jako jiný uživatel ve vnořeném okně"
+
+#: gui/gdmflexiserver-xnest.desktop.in.h:2
+msgid "New login in a nested window"
+msgstr "Nové přihlášení ve vnořeném okně"
+
+#: gui/gdmflexiserver.c:129
+msgid "Choose server"
+msgstr "Vyberte server"
+
+#: gui/gdmflexiserver.c:139
+msgid "Choose the X server to start"
+msgstr "Vyberte X server který spustit"
+
+#: gui/gdmflexiserver.c:145
+msgid "Standard server"
+msgstr "Standardní server"
+
+#: gui/gdmflexiserver.c:193
+msgid "Send the specified protocol command to gdm"
+msgstr "Poslat specifický příkaz protokolu gdm"
+
+#: gui/gdmflexiserver.c:193
+msgid "COMMAND"
+msgstr "PŘÍKAZ"
+
+#: gui/gdmflexiserver.c:194
+msgid "Xnest mode"
+msgstr "Režim Xnest"
+
+#: gui/gdmflexiserver.c:195
+msgid "Do not lock current screen"
+msgstr "Nezamykat tuto obrazovku"
+
+#: gui/gdmflexiserver.c:196
+msgid "Debugging output"
+msgstr "Ladicí výstup"
+
+#: gui/gdmflexiserver.c:197
+msgid "Authenticate before running --command"
+msgstr "Přihlaste se před spuštěním --command"
+
+#: gui/gdmflexiserver.c:269
+msgid ""
+"You do not seem to have the authentication needed for this operation.  "
+"Perhaps your .Xauthority file is not set up correctly."
+msgstr ""
+"Zdá se, že nedisponujete oprávněním pro tuto operaci.  Možná je váš soubor ."
+"Xauthority špatně nastaven."
+
+#: gui/gdmflexiserver.c:295
+msgid ""
+"You do not seem to be logged in on the console.  Starting a new login only "
+"works correctly on the console."
+msgstr ""
+"Zdá se, že nejste přihlášený na konzoli. Spuštění nového přihlášení funguje "
+"správně pouze na konzoli."
+
+#: gui/gdmflexiserver.c:323
+msgid "Can't lock screen"
+msgstr "Nelze zamknout obrazovku"
+
+#: gui/gdmflexiserver.c:326
+msgid "Can't disable xscreensaver display hacks"
+msgstr "Nelze vypnout úpravy programu xsreensaver"
+
+#: gui/gdmflexiserver.desktop.in.h:1
+msgid "Log in as another user without logging out"
+msgstr "Přihlásit se jako jiný uživatel bez odhlášení"
+
+#: gui/gdmflexiserver.desktop.in.h:2
+msgid "New login"
+msgstr "Nové přihlášení"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:53
+msgid "A-M|Azerbaijani"
+msgstr "A-M|Ázerbajdžánsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:55
+msgid "A-M|Amharic"
+msgstr "A-M|Amharsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:57
+msgid "A-M|Arabic (Egypt)"
+msgstr "A-M|Arabsky (Egypt)"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:59
+msgid "A-M|Arabic (Lebanon)"
+msgstr "A-M|Arabsky (Libanon)"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:61
+msgid "A-M|Basque"
+msgstr "A-M|Baskicky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:63
+msgid "A-M|Bulgarian"
+msgstr "A-M|Bulharsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:65
+msgid "A-M|Catalan"
+msgstr "A-M|Katalánsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:67
+msgid "A-M|Chinese (simplified)"
+msgstr "A-M|Čínsky (zjednodušené)"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:69
+msgid "A-M|Chinese (traditional)"
+msgstr "A-M|Čínsky (tradiční)"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:71
+msgid "A-M|Croatian"
+msgstr "A-M|Chorvatsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:73
+msgid "A-M|Czech"
+msgstr "A-M|Česky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:75
+msgid "A-M|Danish"
+msgstr "A-M|Dánsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:77
+msgid "A-M|Dutch"
+msgstr "A-M|Holandsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:79
+msgid "A-M|English"
+msgstr "A-M|Anglicky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:81
+msgid "A-M|Estonian"
+msgstr "A-M|Estonsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:83
+msgid "A-M|English (American)"
+msgstr "A-M|Anglicky (Amerika)"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:85
+msgid "A-M|English (Australian)"
+msgstr "A-M|Anglicky (Austrálie)"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:87
+msgid "A-M|English (British)"
+msgstr "A-M|Anglicky (Británie)"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:89
+msgid "A-M|English (Ireland)"
+msgstr "A-M|Anglicky (Irsko)"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:91
+msgid "A-M|Finnish"
+msgstr "A-M|Finsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:93
+msgid "A-M|French"
+msgstr "A-M|Francouzsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:95
+msgid "A-M|Galician"
+msgstr "A-M|Galsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:97
+msgid "A-M|German"
+msgstr "N-Z|Německy"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:99
+msgid "A-M|Greek"
+msgstr "N-Z|Řecky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:101 gui/gdmlanguages.c:102
+msgid "A-M|Hebrew"
+msgstr "A-M|Hebrejsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:104
+msgid "A-M|Hungarian"
+msgstr "A-M|Maďarsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:106
+msgid "A-M|Icelandic"
+msgstr "A-M|Islandsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:108
+msgid "A-M|Irish"
+msgstr "A-M|Irsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:110
+msgid "A-M|Italian"
+msgstr "A-M|Italsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:112
+msgid "A-M|Japanese"
+msgstr "A-M|Japonsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:114
+msgid "A-M|Korean"
+msgstr "A-M|Korejsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:116
+msgid "A-M|Latvian"
+msgstr "A-M|Lotyšsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:118
+msgid "A-M|Lithuanian"
+msgstr "A-M|Litevsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:120
+msgid "A-M|Macedonian"
+msgstr "A-M|Makedonsky"
+
+#. Note translate the A-M to the A-M you used in the group label
+#: gui/gdmlanguages.c:122
+msgid "A-M|Malay"
+msgstr "A-M|Malajsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:124
+msgid "N-Z|Norwegian (bokmal)"
+msgstr "N-Z|Norsky (bokmal)"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:126
+msgid "N-Z|Norwegian (nynorsk)"
+msgstr "N-Z|Norsky (nynorsk)"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:128
+msgid "N-Z|Polish"
+msgstr "N-Z|Polsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:130
+msgid "N-Z|Portuguese"
+msgstr "N-Z|Portugalsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:132
+msgid "N-Z|Portuguese (Brazilian)"
+msgstr "N-Z|Portugalsky (Brazílie)"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:134
+msgid "N-Z|Romanian"
+msgstr "N-Z|Rumunsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:136
+msgid "N-Z|Russian"
+msgstr "N-Z|Rusky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:138
+msgid "N-Z|Slovak"
+msgstr "N-Z|Slovensky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:140
+msgid "N-Z|Slovenian"
+msgstr "N-Z|Slovinsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:142
+msgid "N-Z|Spanish"
+msgstr "N-Z|Španělsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:144
+msgid "N-Z|Spanish (Mexico)"
+msgstr "N-Z|Španělsky (Mexiko)"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:146
+msgid "N-Z|Swedish"
+msgstr "N-Z|Švédsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:148
+msgid "N-Z|Swedish (Finland)"
+msgstr "N-Z|Švédsky (Finsko)"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:150
+msgid "N-Z|Tamil"
+msgstr "N-Z|Tamilsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:152
+msgid "N-Z|Turkish"
+msgstr "N-Z|Turecky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:154
+msgid "N-Z|Ukrainian"
+msgstr "N-Z|Ukrajinsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:156
+msgid "N-Z|Vietnamese"
+msgstr "N-Z|Vietnamsky"
+
+#. Note translate the N-Z to the N-Z you used in the group label
+#: gui/gdmlanguages.c:158
+msgid "N-Z|Walloon"
+msgstr "N-Z|Valonsky"
+
+#. This is the POSIX/C locale for english, should really be in Other
+#: gui/gdmlanguages.c:160
+msgid "Other|POSIX/C English"
+msgstr "Jiné|POSIX/C Anglicky"
+
+#. This should be the same as in the front of the language strings
+#. * else the languages will appear in the "Other" submenu
+#: gui/gdmlanguages.c:335
+msgid "A-M"
+msgstr "A-M"
+
+#. This should be the same as in the front of the language strings
+#. * else the languages will appear in the "Other" submenu
+#: gui/gdmlanguages.c:343
+msgid "N-Z"
+msgstr "N-Z"
+
+#: gui/gdmlogin.c:69
+msgid "AnotherLevel"
+msgstr "AnotherLevel"
+
+#. default is nicely translated
+#. Translators: default GNOME session
+#: gui/gdmlogin.c:70 gui/gdmlogin.c:1884 gui/gdmlogin.c:1906
+msgid "Default"
+msgstr "Výchozí"
+
+#: gui/gdmlogin.c:71
+msgid "Failsafe"
+msgstr "Záchranné"
+
+#: gui/gdmlogin.c:72
+msgid "Gnome"
+msgstr "GNOME"
+
+#: gui/gdmlogin.c:73
+msgid "KDE"
+msgstr "KDE"
+
+#: gui/gdmlogin.c:74
+msgid "XSession"
+msgstr "Xsession"
+
+#: gui/gdmlogin.c:75 gui/gdmlogin.c:1477 gui/greeter/greeter_session.c:353
+msgid "Gnome Chooser"
+msgstr "Gnome výběr"
+
+#: gui/gdmlogin.c:76 gui/gdmlogin.c:1646
+#: gui/greeter/greeter_action_language.c:45
+msgid "Last"
+msgstr "Předchozí"
+
+#: gui/gdmlogin.c:218 gui/greeter/greeter_parser.c:948
+#: gui/greeter/themes/circles/circles.xml.in.h:4
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:4
+#, no-c-format
+msgid "User %s will login in %d seconds"
+msgstr "Uživatel %s bude přihlášen za %d vteřin"
+
+#: gui/gdmlogin.c:518
+msgid ""
+"Doubleclick here to un-iconify the login window, so that you may log in."
+msgstr "Dvojitě zde klepněte pro obnovení okna pro přihlášení, a přihlaste se."
+
+#: gui/gdmlogin.c:588 gui/gdmlogin.c:600
+#, c-format
+msgid "%sWelcome to %s%s"
+msgstr "%sVítejte na %s%s"
+
+#: gui/gdmlogin.c:598
+msgid "gdm_parse_enriched_string: String too long!"
+msgstr "gdm_parse_enriched_string: Řetězec příliš dlouhý!"
+
+#: gui/gdmlogin.c:755
+msgid ""
+"Could not fork a new process!\n"
+"\n"
+"You likely won't be able to log in either."
+msgstr ""
+"Nelze větvit nový proces!\n"
+"\n"
+"Pravděpodobně se nebudete moci ani přihlásit."
+
+#: gui/gdmlogin.c:803 gui/greeter/greeter_system.c:52
+msgid "Are you sure you want to reboot the machine?"
+msgstr "Jste si jist(a), že chcete restartovat váš počítač?"
+
+#: gui/gdmlogin.c:815 gui/greeter/greeter_system.c:63
+msgid "Are you sure you want to shut down the machine?"
+msgstr "Jste si jist(a), že chcete zastavit váš počítač?"
+
+#: gui/gdmlogin.c:826 gui/greeter/greeter_system.c:73
+msgid "Are you sure you want to suspend the machine?"
+msgstr "Jste si jist(a), že chcete uspat váš počítač?"
+
+#: gui/gdmlogin.c:841
+#, c-format
+msgid "gdm_login_parse_config: No configuration file: %s. Using defaults."
+msgstr ""
+"gdm_config_parse: Žádný konfigurační soubor: %s. Použiji implicitní hodnoty."
+
+#: gui/gdmlogin.c:873 gui/gdmlogin.c:4009
+#, c-format
+msgid "Welcome to %n"
+msgstr "Vítejte na %n"
+
+#: gui/gdmlogin.c:918 gui/greeter/greeter.c:128
+msgid "TimedLoginDelay was less then 5.  I'll just use 5."
+msgstr "TimedLoginDelay méně než 5, proto použiji 5."
+
+#: gui/gdmlogin.c:978 gui/gdmlogin.c:1525 gui/greeter/greeter_session.c:65
+#: gui/greeter/greeter_session.c:400
+msgid "Failsafe Gnome"
+msgstr "Záchranný GNOME"
+
+#: gui/gdmlogin.c:980 gui/gdmlogin.c:1550 gui/greeter/greeter_session.c:67
+#: gui/greeter/greeter_session.c:426
+msgid "Failsafe xterm"
+msgstr "Záchranný XTerm"
+
+#: gui/gdmlogin.c:1026 gui/greeter/greeter_session.c:111
+#, c-format
+msgid ""
+"Your preferred session type %s is not installed on this machine.\n"
+"Do you wish to make %s the default for future sessions?"
+msgstr ""
+"Zvolili jste sezení typu %s, které není nainstalováno na tomto počítači.\n"
+"Chcete učinit %s implicitním nastavením pro příští sezení?"
+
+#. never_encoding
+#. no_group
+#. untranslated
+#. markup
+#: gui/gdmlogin.c:1051 gui/gdmlogin.c:1132
+#: gui/greeter/greeter_action_language.c:154 gui/greeter/greeter_session.c:139
+#, c-format
+msgid ""
+"You have chosen %s for this session, but your default setting is %s.\n"
+"Do you wish to make %s the default for future sessions?"
+msgstr ""
+"Zvolili jste %s pro toto sezení, ale vaše výchozí nastavení je %s.\n"
+"Chcete učinit %s vaším výchozím nastavením pro příští sezení?"
+
+#. if !GdmShowLastSession then our saved session is
+#. * irrelevant, we are in "switchdesk mode"
+#. * and the relevant thing is the saved session
+#. * in .Xclients
+#.
+#: gui/gdmlogin.c:1067 gui/greeter/greeter_session.c:157
+#, c-format
+msgid ""
+"You have chosen %s for this session.\n"
+"If you wish to make %s the default for future sessions,\n"
+"run the 'switchdesk' utility\n"
+"(System->Desktop Switching Tool from the panel menu)."
+msgstr ""
+"Pro toto sezení jste vybrali %s.\n"
+"Chcete-li učinit %s výchozím pro budoucí sezení,\n"
+"spusťte prosím program 'switchdesk'\n"
+"(Systém->Nástroj pro přepínání prostředí z menu panelu)."
+
+#: gui/gdmlogin.c:1327
+#, c-format
+msgid "%s session selected"
+msgstr "Vybráno sezení %s"
+
+#: gui/gdmlogin.c:1362 gui/greeter/greeter_session.c:231
+msgid "Log in using the session that you have used last time you logged in"
+msgstr "Přihlásit se v sezení, se kterým jste se přihlásil(a) posledně"
+
+#: gui/gdmlogin.c:1375 gui/greeter/greeter_session.c:244
+msgid "gdm_login_session_init: Session script directory not found!"
+msgstr "gdm_login_session_init: Adresář se skripty pro sezení nenalezen!"
+
+#: gui/gdmlogin.c:1465 gui/greeter/greeter_session.c:339
+msgid ""
+"This session will log you directly into GNOME, into your current session."
+msgstr ""
+"Toto sezení vás přihlásí do prostředí GNOME, do vašeho současného sezení."
+
+#: gui/gdmlogin.c:1480 gui/greeter/greeter_session.c:356
+msgid ""
+"This session will log you into GNOME and it will let you choose which one of "
+"the GNOME sessions you want to use."
+msgstr ""
+"Toto sezení vás přihlásí do prostředí GNOME, a nechá vás vybrat sezení, "
+"které chcete použít."
+
+#: gui/gdmlogin.c:1515 gui/greeter/greeter_session.c:389
+msgid "Yaikes, nothing found in the session directory."
+msgstr "A jéje, v adresáři sezení nebylo nic nenalezeno."
+
+#: gui/gdmlogin.c:1527 gui/greeter/greeter_session.c:402
+msgid ""
+"This is a failsafe session that will log you into GNOME.  No startup scripts "
+"will be read and it is only to be used when you can't log in otherwise.  "
+"GNOME will use the 'Default' session."
+msgstr ""
+"Toto je záchranné sezení, které vám umožní přihlášení do prostředí GNOME. "
+"Nebudou provedeny žádné startovací skripty; toto sezení by mělo být použito "
+"pouze tehdy, pokud není možné se přihlásit jinak. Bude použito 'Výchozí' "
+"sezení."
+
+#: gui/gdmlogin.c:1552 gui/greeter/greeter_session.c:428
+msgid ""
+"This is a failsafe session that will log you into a terminal.  No startup "
+"scripts will be read and it is only to be used when you can't log in "
+"otherwise.  To exit the terminal, type 'exit'."
+msgstr ""
+"Toto je záchranné sezení, které vám umožní přihlášení do terminálu. Nebudou "
+"provedeny žádné startovací skripty; toto sezení by mělo být použito pouze "
+"tehdy, pokud není možné se přihlásit jinak. Pro ukončení terminálu použijte "
+"příkaz 'exit'."
+
+#: gui/gdmlogin.c:1573 gui/greeter/greeter_session.c:450
+msgid "No default session link found. Using Failsafe GNOME.\n"
+msgstr ""
+"Nenalezen žádný odkaz na výchozí sezení. Bude použito Záchranné sezení "
+"prostředí GNOME.\n"
+
+#. never_encoding
+#. no_group
+#. untranslated
+#. makrup
+#: gui/gdmlogin.c:1617
+#, c-format
+msgid "%s language selected"
+msgstr "Sezení bude %s"
+
+#: gui/gdmlogin.c:1657
+msgid "Log in using the language that you have used last time you logged in"
+msgstr "Přihlásit se s jazykem, se kterým jste se přihlásili posledně"
+
+#: gui/gdmlogin.c:1672
+msgid "Log in using the default system language"
+msgstr "Přihlásit se s jazykem nastaveným jako výchozí pro váš systém"
+
+#: gui/gdmlogin.c:1692
+msgid "Other"
+msgstr "Ostatní"
+
+#: gui/gdmlogin.c:1846 gui/gdmlogin.c:1853
+msgid "Select GNOME session"
+msgstr "Vyberte sezení GNOME"
+
+#: gui/gdmlogin.c:1920
+msgid "Create new session"
+msgstr "Vytvořit nové sezení"
+
+#: gui/gdmlogin.c:1929
+msgid "Name: "
+msgstr "Jméno: "
+
+#. Translators: this is to remember the chosen gnome session
+#. * for next time
+#: gui/gdmlogin.c:1951
+msgid "Remember this setting"
+msgstr "Zapamatovat toto nastavení"
+
+#: gui/gdmlogin.c:2335
+msgid "Please insert 25 cents to log in."
+msgstr "Za přihlášení vhodit 5 korun."
+
+#: gui/gdmlogin.c:2742
+msgid "GNOME Desktop Manager"
+msgstr "Správce přihlášení GNOME"
+
+#: gui/gdmlogin.c:2750
+#, c-format
+msgid "Can't open icon file: %s. Suspending iconify feature!"
+msgstr "Nelze otevřít soubor s ikonou: %s. Vypínám možnost zmenšení do ikony!"
+
+#: gui/gdmlogin.c:2772
+msgid "Iconify the login window"
+msgstr "Ikonifikovat okno přihlášení"
+
+#: gui/gdmlogin.c:2797 gui/greeter/greeter_item.c:96
+msgid "%a %b %d, %H:%M"
+msgstr "%a %d. %b, %H:%M"
+
+#: gui/gdmlogin.c:2799 gui/greeter/greeter_item.c:100
+msgid "%a %b %d, %I:%M %p"
+msgstr "%a %b. %d, %I:%M %p"
+
+#: gui/gdmlogin.c:2865
+msgid "Finger"
+msgstr "Finger"
+
+#: gui/gdmlogin.c:2957
+msgid "GDM Login"
+msgstr "GDM Přihlášení"
+
+#: gui/gdmlogin.c:3000 gui/greeter/greeter_canvas_item.c:129
+#: gui/greeter/greeter_parser.c:923
+#: gui/greeter/themes/circles/circles.xml.in.h:11
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:11
+msgid "_Session"
+msgstr "_Sezení"
+
+#: gui/gdmlogin.c:3007 gui/greeter/greeter_canvas_item.c:122
+#: gui/greeter/greeter_parser.c:918
+#: gui/greeter/themes/circles/circles.xml.in.h:9
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:9
+msgid "_Language"
+msgstr "_Jazyk"
+
+#: gui/gdmlogin.c:3019
+msgid "_Configure..."
+msgstr "_Nastavení..."
+
+#: gui/gdmlogin.c:3026
+msgid ""
+"Configure GDM (this login manager). This will require the root password."
+msgstr ""
+"Nastavit GDM (tento správce přihlášení). Budu potřebovat heslo uživatele "
+"root."
+
+#: gui/gdmlogin.c:3033
+msgid "_Reboot..."
+msgstr "_Restartovat..."
+
+#: gui/gdmlogin.c:3040
+msgid "Reboot your computer"
+msgstr "Restartovat váš počítač"
+
+#: gui/gdmlogin.c:3046
+msgid "Shut _down..."
+msgstr "_Zastavit..."
+
+#: gui/gdmlogin.c:3053
+msgid "Shut down your computer so that you may turn it off."
+msgstr "Zastavit váš počítač, abyste jej mohli vypnout."
+
+#: gui/gdmlogin.c:3060
+msgid "_Suspend..."
+msgstr "U_spat..."
+
+#: gui/gdmlogin.c:3067
+msgid "Suspend your computer"
+msgstr "Uspat váš počítač"
+
+#: gui/gdmlogin.c:3073 gui/greeter/greeter_canvas_item.c:138
+#: gui/greeter/greeter_parser.c:928
+#: gui/greeter/themes/circles/circles.xml.in.h:2
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:2
+msgid "S_ystem"
+msgstr "S_ystém"
+
+#: gui/gdmlogin.c:3085 gui/greeter/greeter_canvas_item.c:151
+#: gui/greeter/greeter_parser.c:938
+#: gui/greeter/themes/circles/circles.xml.in.h:10
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:10
+msgid "_Quit"
+msgstr "_Konec"
+
+#: gui/gdmlogin.c:3087 gui/greeter/greeter_canvas_item.c:153
+#: gui/greeter/greeter_parser.c:933
+#: gui/greeter/themes/circles/circles.xml.in.h:1
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:1
+msgid "D_isconnect"
+msgstr "Odpoj_it se"
+
+#: gui/gdmlogin.c:3644
+#, c-format
+msgid "Can't open DefaultImage: %s. Suspending face browser!"
+msgstr "Nelze otevřít DefaultImage: %s. Vypínám prohlížeč vzhledu!"
+
+#: gui/gdmlogin.c:4084 gui/gdmlogin.c:4113 gui/greeter/greeter.c:556
+#: gui/greeter/greeter.c:585
+#, c-format
+msgid ""
+"The greeter version (%s) does not match the daemon version.\n"
+"You have probably just upgraded gdm.\n"
+"Please restart the gdm daemon or reboot the computer."
+msgstr ""
+"Verze programu pro přivítání (%s) neodpovídá verzi démona.\n"
+"Pravděpodobně jste právě aktualizovali program GDM.\n"
+"Prosím, restartujte démona GDM nebo restartujte počítač."
+
+#: gui/gdmlogin.c:4119 gui/gdmlogin.c:4163 gui/greeter/greeter.c:591
+#: gui/greeter/greeter.c:636
+msgid "Reboot"
+msgstr "Restartovat počítač"
+
+#: gui/gdmlogin.c:4155 gui/greeter/greeter.c:628
+#, c-format
+msgid ""
+"The greeter version (%s) does not match the daemon version (%s).\n"
+"You have probably just upgraded gdm.\n"
+"Please restart the gdm daemon or reboot the computer."
+msgstr ""
+"Verze programu pro přivítání (%s) neodpovídá verzi démona (%s).\n"
+"Pravděpodobně jste právě aktualizovali program GDM.\n"
+"Prosím, restartujte démona GDM nebo restartujte počítač."
+
+#: gui/gdmlogin.c:4161 gui/greeter/greeter.c:634
+msgid "Restart"
+msgstr "Restartovat GDM"
+
+#: gui/gdmlogin.c:4206 gui/greeter/greeter.c:1055
+msgid "main: Error setting up HUP signal handler"
+msgstr "main: Chyba při nastavování zpracování signálu HUP"
+
+#: gui/gdmlogin.c:4214 gui/greeter/greeter.c:1063
+msgid "main: Error setting up INT signal handler"
+msgstr "main: Chyba při nastavování zpracování signálu INT"
+
+#: gui/gdmlogin.c:4217 gui/greeter/greeter.c:1066
+msgid "main: Error setting up TERM signal handler"
+msgstr "main: Chyba při nastavování zpracování signálu TERM"
+
+#: gui/gdmlogin.c:4308 gui/greeter/greeter.c:1279
+msgid ""
+"Your session directory is missing or empty!\n"
+"\n"
+"There are two available sessions you can use, but\n"
+"you should log in and correct the gdm configuration."
+msgstr ""
+"Váš adresář se sezením je prázdný nebo chybí!\n"
+"\n"
+"Jsou k dispozici dvě sezení, která můžete použít, ale\n"
+"měl byste se přihlásit a opravit nastavení programu GDM."
+
+#: gui/gdmlogin.c:4331 gui/greeter/greeter.c:1303
+msgid ""
+"The configuration file contains an invalid command\n"
+"line for the login dialog, and thus I ran the\n"
+"default command.  Please fix your configuration."
+msgstr ""
+"Soubor s nastavením obsahuje neplatný příkazový\n"
+"řádek pro přihlašovací dialog, proto jsem použil výchozí\n"
+"příkazový řádek. Opravte si prosím vaše nastavení."
+
+#: gui/gdmlogin.c:4355 gui/greeter/greeter.c:1328
+msgid ""
+"The configuration was not found.  GDM is using\n"
+"defaults to run this session.  You should log in\n"
+"and create a configuration file with the GDM\n"
+"configuration program."
+msgstr ""
+"Soubor s nastavením nebyl nalezen. Program GDM\n"
+"používá pro toto sezení výchozí nastavení. Měl byste se\n"
+"přihlásit a vytvořit soubor s nastavením pomocí programu pro\n"
+"nastavení GDM."
+
+#: gui/gdmphotosetup.c:129
+msgid ""
+"The face browser is not configured,\n"
+"please ask your system administrator to enable it\n"
+"in the GDM configurator program."
+msgstr ""
+"Prohlížeč tváří není nastaven,\n"
+"řekněte prosím vašemu administrátorovi aby jej\n"
+"nastavil v konfiguraci GDM."
+
+#: gui/gdmphotosetup.c:138
+msgid "Select a photo"
+msgstr "Vyberte fotku"
+
+#: gui/gdmphotosetup.c:147
+msgid "Select a photograph to show in the facebrowser:"
+msgstr "Vyberte fotografii, kterou chcete ukázat v prohlížeči tváří:"
+
+#: gui/gdmphotosetup.c:152
+msgid "Browse"
+msgstr "Probírat"
+
+#: gui/gdmphotosetup.c:185
+msgid "No picture selected."
+msgstr "Žádný obrázek nebyl vybrán."
+
+#: gui/gdmphotosetup.c:194
+#, c-format
+msgid ""
+"The picture is too large and the system administrator\n"
+"disallowed pictures larger then %d bytes to\n"
+"show in the face browser"
+msgstr ""
+"Obrázek je příliš veliký a váš správce systému\n"
+"nepovoluje v prohlížeči tváří obrázky\n"
+"větší než %d bytů "
+
+#: gui/gdmphotosetup.c:220
+#, c-format
+msgid ""
+"File %s cannot be open for reading\n"
+"Error: %s"
+msgstr ""
+"Soubor %s nelze otevřít pro čtení\n"
+"Chyba: %s"
+
+#: gui/gdmphotosetup.c:238
+#, c-format
+msgid ""
+"File %s cannot be open for writing\n"
+"Error: %s"
+msgstr ""
+"Soubor %s nelze otevřít pro zápis\n"
+"Chyba: %s"
+
+#: gui/gdmphotosetup.desktop.in.h:1
+msgid ""
+"Change the picture that will show in the GDM (login manager) face browser"
+msgstr ""
+"Změnit obrázek, který bude zobrazen v prohlížeči tváří programu GDM (správci "
+"přihlášení) "
+
+#: gui/gdmphotosetup.desktop.in.h:2
+msgid "Login Photo"
+msgstr "Fotka přihlášení"
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: gui/gdmsetup-strings.c:7 gui/gdmsetup.glade.h:15
+msgid "GDM Setup"
+msgstr "Nastavení GDM"
+
+#: gui/gdmsetup-strings.c:8 gui/gdmsetup.glade.h:20
+msgid "L_ocal: "
+msgstr "_Místní: "
+
+#: gui/gdmsetup-strings.c:9 gui/gdmsetup.glade.h:51
+msgid "_Remote: "
+msgstr "_Vzdálený: "
+
+#: gui/gdmsetup-strings.c:10 gui/gdmsetup-strings.c:12
+#: gui/gdmsetup-strings.c:42 gui/gdmsetup.c:807 gui/gdmsetup.glade.h:39
+msgid "Standard greeter"
+msgstr "Standardní přivítání"
+
+#: gui/gdmsetup-strings.c:11 gui/gdmsetup-strings.c:13
+#: gui/gdmsetup-strings.c:52 gui/gdmsetup.c:809 gui/gdmsetup.glade.h:17
+msgid "Graphical greeter"
+msgstr "Grafické přivítání"
+
+#: gui/gdmsetup-strings.c:14 gui/gdmsetup.glade.h:9
+msgid "Always use 24 hour cloc_k format"
+msgstr "Vždy použít 24 _hodinový formát"
+
+#: gui/gdmsetup-strings.c:15 gui/gdmsetup.glade.h:18
+msgid "Greeter"
+msgstr "Přivítání"
+
+#: gui/gdmsetup-strings.c:16 gui/gdmsetup.glade.h:48
+msgid "_Login a user automatically on first bootup"
+msgstr "Automatické přih_lášení při prvním zapnutí"
+
+#: gui/gdmsetup-strings.c:17 gui/gdmsetup.glade.h:44
+msgid "_Automatic login username:"
+msgstr "Uživatel pro _automatické přihlášení:"
+
+#: gui/gdmsetup-strings.c:18 gui/gdmsetup-strings.c:23
+#: gui/gdmsetup-strings.c:26 gui/gdmsetup-strings.c:29
+#: gui/gdmsetup-strings.c:37 gui/gdmsetup.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: gui/gdmsetup-strings.c:20 gui/gdmsetup.glade.h:22
+msgid "Login a user automa_tically after a specified number of seconds"
+msgstr "Au_tomatické přihlášení uživatele po zadaném čase (v sekundách)"
+
+#: gui/gdmsetup-strings.c:21 gui/gdmsetup.glade.h:41
+msgid "Timed login us_ername:"
+msgstr "Uživat_el časovaného přihlášení: "
+
+#: gui/gdmsetup-strings.c:22 gui/gdmsetup.glade.h:53
+msgid "_Seconds before login:"
+msgstr "_Sekund před přihlášením:"
+
+#: gui/gdmsetup-strings.c:24 gui/gdmsetup.glade.h:40
+msgid "Timed login"
+msgstr "Časované přihlášení"
+
+#: gui/gdmsetup-strings.c:25 gui/gdmsetup.glade.h:16
+msgid "General"
+msgstr "Obecné"
+
+#: gui/gdmsetup-strings.c:27 gui/gdmsetup.glade.h:54
+msgid "_Welcome string: "
+msgstr "Vítací _zpráva: "
+
+#: gui/gdmsetup-strings.c:28 gui/gdmsetup.glade.h:42
+msgid "Welcome string: "
+msgstr "Vítací zpráva: "
+
+#: gui/gdmsetup-strings.c:30 gui/gdmsetup.glade.h:23
+msgid "Logo"
+msgstr "Logo"
+
+#: gui/gdmsetup-strings.c:31 gui/gdmsetup.glade.h:38
+msgid "Show choosable user images (_face browser)"
+msgstr "Ukázat vybratelné obráz_ky uživatelů (probírání tváří)"
+
+#: gui/gdmsetup-strings.c:32 gui/gdmsetup.glade.h:29
+msgid "Miscellaneous"
+msgstr "Různé"
+
+#: gui/gdmsetup-strings.c:33 gui/gdmsetup.glade.h:49
+msgid "_No background"
+msgstr "Žád_né pozadí"
+
+#: gui/gdmsetup-strings.c:34 gui/gdmsetup.glade.h:46
+msgid "_Image"
+msgstr "_Obrázek"
+
+#: gui/gdmsetup-strings.c:35 gui/gdmsetup.glade.h:12
+msgid "Co_lor"
+msgstr "B_arva"
+
+#: gui/gdmsetup-strings.c:36 gui/gdmsetup.glade.h:52
+msgid "_Scale background image to fit"
+msgstr "_Roztáhnout pozadí přes celou obrazovku"
+
+#: gui/gdmsetup-strings.c:38 gui/gdmsetup.glade.h:50
+msgid "_Only color on remote displays"
+msgstr "Na _vzdálených displejích jen barva"
+
+#: gui/gdmsetup-strings.c:39 gui/gdmsetup.glade.h:45
+msgid "_Background color: "
+msgstr "_Barva pozadí: "
+
+#: gui/gdmsetup-strings.c:40 gui/gdmsetup.glade.h:33
+msgid "Pick a color"
+msgstr "Vyber barvu"
+
+#: gui/gdmsetup-strings.c:41 gui/gdmsetup.glade.h:11
+msgid "Background"
+msgstr "Pozadí"
+
+#: gui/gdmsetup-strings.c:43 gui/gdmsetup.glade.h:4
+msgid "<b>Preview:</b>"
+msgstr "<b>Náhled:</b>"
+
+#: gui/gdmsetup-strings.c:44 gui/gdmsetup.glade.h:31
+msgid "No screenshot available"
+msgstr "Žádný obrázek k dispozici"
+
+#: gui/gdmsetup-strings.c:45 gui/gdmsetup.glade.h:3
+msgid "<b>Description:</b>"
+msgstr "<b>Popis:</b>"
+
+#: gui/gdmsetup-strings.c:46 gui/gdmsetup.glade.h:2
+msgid "<b>Author:</b>"
+msgstr "<b>Autor:</b>"
+
+#: gui/gdmsetup-strings.c:47 gui/gdmsetup.glade.h:57
+msgid ""
+"description\n"
+"widget"
+msgstr ""
+"prvek\n"
+"popisu"
+
+#: gui/gdmsetup-strings.c:49 gui/gdmsetup.glade.h:55
+msgid "author"
+msgstr "autor"
+
+#: gui/gdmsetup-strings.c:50 gui/gdmsetup.glade.h:56
+msgid "copyright"
+msgstr "copyright"
+
+#: gui/gdmsetup-strings.c:51 gui/gdmsetup.glade.h:47
+msgid "_Install new theme"
+msgstr "_Instalovat nové téma"
+
+#: gui/gdmsetup-strings.c:53 gui/gdmsetup.glade.h:5
+msgid "Allow _root to login with GDM"
+msgstr "Povolit přihlášení s GDM jako '_root'"
+
+#: gui/gdmsetup-strings.c:54 gui/gdmsetup.glade.h:8
+msgid "Allow root to login r_emotely with GDM"
+msgstr "Povolit vzdál_ené přihlášení s GDM jako 'root'"
+
+#: gui/gdmsetup-strings.c:55 gui/gdmsetup.glade.h:7
+msgid "Allow remote _timed logins"
+msgstr "Povoli_t vzdálené časované přihlášení"
+
+#: gui/gdmsetup-strings.c:56 gui/gdmsetup.glade.h:37
+msgid "Show _system menu"
+msgstr "Povolit _systémové menu"
+
+#: gui/gdmsetup-strings.c:57 gui/gdmsetup.glade.h:6
+msgid "Allow c_onfiguration from the login screen"
+msgstr "P_ovolit uživatelům spustit nastavení ze systémového menu"
+
+#: gui/gdmsetup-strings.c:58 gui/gdmsetup.glade.h:35
+msgid "Retry _delay (seconds) :"
+msgstr "Pauza mezi pokusy (sekun_dy):"
+
+#: gui/gdmsetup-strings.c:59 gui/gdmsetup.glade.h:32
+msgid "Options"
+msgstr "Možnosti"
+
+#: gui/gdmsetup-strings.c:60 gui/gdmsetup.glade.h:36
+msgid "Security"
+msgstr "Bezpečnost"
+
+#: gui/gdmsetup-strings.c:61 gui/gdmsetup.glade.h:30
+msgid ""
+"No XDMCP support in the binary.  To enable XDMCP support you must recompile "
+"GDM with the XDMCP libraries."
+msgstr ""
+"Program nepodporuje protokol XDMCP. Chcete-li podporu protokolu XDMCP "
+"zapnout, musíte znovu přeložit program GDM s knihovnami pro protokol XDMCP."
+
+#: gui/gdmsetup-strings.c:62 gui/gdmsetup.glade.h:19
+msgid "Honour _indirect requests"
+msgstr "Uznávat _nepřímé požadavky"
+
+#: gui/gdmsetup-strings.c:63 gui/gdmsetup.glade.h:21
+msgid "Listen on UDP port: "
+msgstr "Poslouchat na UDP portu: "
+
+#: gui/gdmsetup-strings.c:64 gui/gdmsetup.glade.h:26
+msgid "Maximum pending requests:"
+msgstr "Maximum čekajících požadavků:"
+
+#: gui/gdmsetup-strings.c:65 gui/gdmsetup.glade.h:24
+msgid "Max pending indirect requests:"
+msgstr "Max. čekajících nepřímých požadavků:"
+
+#: gui/gdmsetup-strings.c:66 gui/gdmsetup.glade.h:27
+msgid "Maximum remote sessions:"
+msgstr "Maximum vzdálených sezení:"
+
+#: gui/gdmsetup-strings.c:67 gui/gdmsetup.glade.h:28
+msgid "Maximum wait time:"
+msgstr "Maximální čekání doba:"
+
+#: gui/gdmsetup-strings.c:68 gui/gdmsetup.glade.h:25
+msgid "Maximum indirect wait time:"
+msgstr "Maximální čekací doba pro nepřímé:"
+
+#: gui/gdmsetup-strings.c:69 gui/gdmsetup.glade.h:13
+msgid "Displays per host:"
+msgstr "Displejů na host:"
+
+#: gui/gdmsetup-strings.c:70 gui/gdmsetup.glade.h:34
+msgid "Ping interval (minutes):"
+msgstr "Interval pingu (minuty):"
+
+#: gui/gdmsetup-strings.c:71 gui/gdmsetup.glade.h:14
+msgid "Enable _XDMCP"
+msgstr "Povolit _XDMCP"
+
+#: gui/gdmsetup-strings.c:72 gui/gdmsetup.glade.h:43
+msgid "XDMCP"
+msgstr "XDMCP"
+
+#: gui/gdmsetup.c:145
+msgid ""
+"An error occured while trying to contact the login screens.  Not all updates "
+"may have taken effect."
+msgstr ""
+"Během pokusu o kontakt s přihlašovacím dialogem došlo k chybě. Může se stát, "
+"že ne všechny aktualizace se projevily."
+
+#: gui/gdmsetup.c:1324
+msgid "Archive is not of a subdirectory"
+msgstr "Archív není podadresářem"
+
+#: gui/gdmsetup.c:1332
+msgid "Archive is not of a single subdirectory"
+msgstr "Archív není jediný podadresář"
+
+#: gui/gdmsetup.c:1356 gui/gdmsetup.c:1435
+msgid "File not a tar.gz or tar archive"
+msgstr "Soubor není tar.gz či tar archív"
+
+#: gui/gdmsetup.c:1358
+msgid "Archive does not include a GdmGreeterTheme.info file"
+msgstr "Archív neobsahuje soubor GdmGreeterTheme.info"
+
+#: gui/gdmsetup.c:1380
+msgid "File does not exist"
+msgstr "Soubor neexistuje."
+
+#: gui/gdmsetup.c:1488
+msgid "No file selected"
+msgstr "Žádný soubor není vybrán"
+
+#: gui/gdmsetup.c:1514
+#, c-format
+msgid ""
+"Not a theme archive\n"
+"Details: %s"
+msgstr ""
+"Není archív s tématem\n"
+"Detaily: %s"
+
+#: gui/gdmsetup.c:1536
+#, c-format
+msgid ""
+"Theme directory '%s' seems to be already installed, install again anyway?"
+msgstr "Adresář s tématem '%s' je již nainstalován, nainstalovat přes něj?"
+
+#: gui/gdmsetup.c:1581
+msgid "Some error occured when installing the theme"
+msgstr "Při instalaci tématu došlo k nějaké chybě"
+
+#: gui/gdmsetup.c:1626
+msgid "Select new theme archive to install"
+msgstr "Vyberte nový archív s tématem k instalaci"
+
+#. This is the temporary help dialog
+#: gui/gdmsetup.c:1766
+#, c-format
+msgid ""
+"This configuration window changes settings for the GDM daemon, which is the "
+"graphical login screen for GNOME.  Changes that you make will take effect "
+"immediately.\n"
+"\n"
+"Note that not all configuration options are listed here.  You may want to "
+"edit %s if you cannot find what you are looking for."
+msgstr ""
+"Toto okno s nastavením umožňuje změnit nastavení démona GDM, což je grafické "
+"přihlašovací okno pro prostředí GNOME. Změny, které zde provedete, se "
+"projeví ihned.\n"
+"\n"
+"Ne všechna nastavení, která jsou možná, naleznete zde. Pokud nemůžete nalézt "
+"to, co hledáte, zkuste editovat přímo %s."
+
+#: gui/gdmsetup.c:2070
+msgid "You must be the superuser (root) to configure GDM.\n"
+msgstr "Pro nastavení GDM musíte být superuživatel (root).\n"
+
+#. EOF
+#: gui/gdmsetup.desktop.in.h:1
+msgid "A graphical application for configuring the GNOME Display Manager (GDM)"
+msgstr "Grafická aplikace pro nastavení správce displeje GNOME (GDM)"
+
+#: gui/gdmsetup.desktop.in.h:2
+msgid "GDM Configurator"
+msgstr "Nastavení GDM"
+
+#: gui/greeter/greeter.c:72
+#, c-format
+msgid "greeter_parse_config: No configuration file: %s. Using defaults."
+msgstr ""
+"greeter_config_parse: Chybí soubor s nastavením: %s. Použiji výchozí hodnoty."
+
+#: gui/greeter/greeter.c:1141
+#, c-format
+msgid "There was an error loading the theme %s"
+msgstr "Při načítání tématu %s došlo k chybě"
+
+#: gui/greeter/greeter.c:1179
+msgid ""
+"The theme for the graphical greeter is corrupt.  It does not contain "
+"definition for the username/password entry element."
+msgstr ""
+"Téma pro grafický program pro přivítání je poškozené. Neobsahuje definici "
+"elementu vkládání uživatelského jména/hesla."
+
+#: gui/greeter/greeter.c:1212
+msgid ""
+"There was an error loading the theme, and the default theme also could not "
+"have been loaded, I will attempt to start the standard greeter"
+msgstr ""
+"Při nahrávání tématu došlo k chybě, a výchozí téma také nebylo možné načíst. "
+"Zkusím spustit standardní program pro přivítání."
+
+#: gui/greeter/greeter.c:1232
+msgid ""
+"I could not start the standard greeter.  This display will abort and you may "
+"have to login another way and fix the installation of gdm"
+msgstr ""
+"Nelze spustit standardní program pro přivítání. Tento displej bude ukončen, "
+"a vy se budete muset přihlásit jiným způsobem a opravit instalaci programu "
+"GDM."
+
+#: gui/greeter/greeter_action_language.c:194
+msgid "Select a language"
+msgstr "Vyberte si jazyk"
+
+#: gui/greeter/greeter_action_language.c:207
+msgid "Select a language for your session to use:"
+msgstr "Vyberte si jazyk pro vaše sezení:"
+
+#: gui/greeter/greeter_system.c:150
+msgid "Shut down the computer"
+msgstr "Vypnout váš počítač"
+
+#: gui/greeter/greeter_system.c:162
+msgid "Suspend the computer"
+msgstr "Uspat váš počítač"
+
+#: gui/greeter/greeter_system.c:174
+msgid "Reboot the computer"
+msgstr "Restartovat váš počítač"
+
+#: gui/greeter/greeter_system.c:187
+msgid "Configure"
+msgstr "Nastavení"
+
+#: gui/greeter/greeter_parser.c:943
+#: gui/greeter/themes/circles/circles.xml.in.h:8
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:8
+msgid "You've got capslock on!"
+msgstr "Máte zapnut Caps Lock!"
+
+#: gui/greeter/greeter_parser.c:955
+#: gui/greeter/themes/circles/circles.xml.in.h:7
+#: gui/greeter/themes/happygnome/happygnome.xml.in.h:7
+#, no-c-format
+msgid "Welcome to %h"
+msgstr "Vítejte na %h"
+
+#: gui/greeter/themes/circles/GdmGreeterTheme.desktop.in.h:1
+msgid "(c) 2002 Bond, James Bond"
+msgstr "(c) 2002 Bond, James Bond"
+
+#: gui/greeter/themes/circles/GdmGreeterTheme.desktop.in.h:2
+msgid "Bond, James Bond"
+msgstr "Bond, James Bond"
+
+#: gui/greeter/themes/circles/GdmGreeterTheme.desktop.in.h:3
+msgid "Circles"
+msgstr "Kruhy"
+
+#: gui/greeter/themes/circles/GdmGreeterTheme.desktop.in.h:4
+msgid "Theme with blue circles"
+msgstr "Téma s modrými kruhy"
+
+#: gui/greeter/themes/happygnome/GdmGreeterTheme.desktop.in.h:1
+msgid "(c) 2002 GNOME"
+msgstr "(c) 2002 GNOME"
+
+#: gui/greeter/themes/happygnome/GdmGreeterTheme.desktop.in.h:2
+msgid "GNOME Art variation of Circles"
+msgstr "Variace kruhů s obrázky z GNOME"
+
+#: gui/greeter/themes/happygnome/GdmGreeterTheme.desktop.in.h:3
+msgid "GNOME Artists"
+msgstr "Umělci GNOME"
+
+#: gui/greeter/themes/happygnome/GdmGreeterTheme.desktop.in.h:4
+msgid "Happy GNOME"
+msgstr "Šťastný GNOME"
+
+#: utils/gdmaskpass.c:26
+msgid "gdmaskpass only runs as root\n"
+msgstr "gdmaskpass lze spustit jen jako root\n"
+
+#: utils/gdmaskpass.c:42 utils/gdmaskpass.c:48
+msgid "Authentication failure!\n"
+msgstr "Ověření selhalo!\n"
+
+#: vicious-extensions/glade-helper.c:82
+msgid "(memory buffer)"
+msgstr "(paměť)"
+
+#: vicious-extensions/glade-helper.c:114 vicious-extensions/glade-helper.c:136
+#: vicious-extensions/glade-helper.c:156
+msgid "(memory buffer"
+msgstr "(paměť"
+
+#: vicious-extensions/glade-helper.c:188
+#, c-format
+msgid ""
+"An error occured while loading the user interface\n"
+"element %s%s from file %s.\n"
+"Possibly the glade interface description was corrupted.\n"
+"%s cannot continue and will exit now.\n"
+"You should check your installation of %s or reinstall %s."
+msgstr ""
+"Při načítání prvku uživatelského rozhraní %s %s\n"
+"ze souboru %s došlo k chybě.\n"
+"Je možné, že popis rozhraní formátu glade byl poškozen.\n"
+"%s nemůže pokračovat a bude nyní ukončen.\n"
+"Měli byste ověřit vaši instalaci %s nebo znovu nainstalovat %s."
+
+#: vicious-extensions/glade-helper.c:204
+#, c-format
+msgid ""
+"Glade file is on crack! Make sure the correct file is installed!\n"
+"file: %s widget: %s"
+msgstr ""
+"Soubor Glade je poškozený! Ujistěte se, že je nainstalovaný správný soubor!\n"
+"soubor: %s prvek: %s"
+
+#: vicious-extensions/glade-helper.c:234
+#, c-format
+msgid ""
+"An error occured while loading the user interface\n"
+"element %s%s from file %s.\n"
+"CList type widget should have %d columns.\n"
+"Possibly the glade interface description was corrupted.\n"
+"%s cannot continue and will exit now.\n"
+"You should check your installation of %s or reinstall %s."
+msgstr ""
+"Při načítání prvku uživatelského rozhraní %s %s\n"
+"ze souboru %s došlo k chybě.\n"
+"Prvek typu CList by měl mít %d sloupců.\n"
+"Je možné, že popis rozhraní formátu glade byl poškozen.\n"
+"%s nemůže pokračovat a bude nyní ukončen.\n"
+"Měli byste ověřit vaši instalaci %s nebo znovu nainstalovat %s."
+
+#: vicious-extensions/glade-helper.c:252
+#, c-format
+msgid ""
+"Glade file is on crack! Make sure the correct file is installed!\n"
+"file: %s widget: %s expected clist columns: %d"
+msgstr ""
+"Soubor Glade je poškozený! Ujistěte se, že je nainstalovaný správný soubor!\n"
+"soubor: %s prvek: %s očekávaný počet sloupců: %d"
+
+#: vicious-extensions/glade-helper.c:270
+#, c-format
+msgid ""
+"An error occured while loading the user interface\n"
+"from file %s.\n"
+"Possibly the glade interface description was not found.\n"
+"%s cannot continue and will exit now.\n"
+"You should check your installation of %s or reinstall %s."
+msgstr ""
+"Nastala chyba při načítání uživatelského rozhraní\n"
+"ze souboru %s.\n"
+"Pravděpodobně nebyl nalezený popis rozhraní ve formátu glade.\n"
+"%s nemůže pokračovat a bude nyní ukončen.\n"
+"Měli byste ověřit vaši instalaci %s nebo znovu nainstalovat %s."
+
+#: vicious-extensions/glade-helper.c:281
+#, c-format
+msgid "No interface could be loaded, BAD! (file: %s)"
+msgstr "Nelze nalézt rozhraní, což je ŠPATNÉ! (soubor: %s)"
+
+#~ msgid "Disconnect"
+#~ msgstr "Odpojit se"
+
+#~ msgid "Option"
+#~ msgstr "Možnosti"
+
+#~ msgid "Quit"
+#~ msgstr "Konec"
+
+#~ msgid "Session"
+#~ msgstr "Sezení"
+
+#~ msgid "System"
+#~ msgstr "Systém"

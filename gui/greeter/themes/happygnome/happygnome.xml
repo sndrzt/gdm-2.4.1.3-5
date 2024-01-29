@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<!DOCTYPE greeter SYSTEM "greeter.dtd">
+<greeter>
+  <item type="svg">
+    <normal file="background.svg"/>
+    <pos x="0" y="0" width="100%" height="-75"/>
+  </item>
+  <item type="rect">
+    <normal color="#000000"/>
+    <pos x="0" y="-75" width="100%" height="75"/>
+    <fixed>
+      <item type="rect">
+        <normal color="#ffffff"/>
+        <pos x="0" y="4" width="100%" height="100%"/>
+        <box orientation="horizontal" spacing="10" xpadding="10">
+          <item type="rect" id="language_button" button="true">
+            <normal color="#ffffff"/>
+	    <pos y="50%" anchor="w" width="box" height="box"/>
+            <box orientation="horizontal" spacing="10" xpadding="10">
+	      <item type="pixmap">
+	        <normal file="options.png" tint="#dddddd"/>
+	        <prelight file="options.png"/>
+	        <active file="options.png" tint="#ff0000"/>
+	        <pos y="50%" anchor="w"/>
+	      </item>
+	      <item type="label">
+	        <normal color="#000000" font="Sans 14"/>
+		<prelight color="#666666" font="Sans 14"/>
+		<active color="#ff0000" font="Sans 14"/>
+	        <pos y="50%" anchor="w"/>
+		<!-- Stock label for: _Language -->
+		<stock type="language"/>
+		<!-- Kept for compatibility with older gdm versions -->
+		<text>_Language</text>
+		<text xml:lang="am">ááá (_L)</text>
+		<text xml:lang="be">_ÐÐ¾Ð²Ð°</text>
+		<text xml:lang="bg">_ÐÐ·Ð¸Ðº</text>
+		<text xml:lang="ca">_Llengua</text>
+		<text xml:lang="cs">_Jazyk</text>
+		<text xml:lang="da">S_prog</text>
+		<text xml:lang="de">S_prache</text>
+		<text xml:lang="el">Î_Î»ÏÏÏÎ±</text>
+		<text xml:lang="es">_Idioma</text>
+		<text xml:lang="et">_Keel</text>
+		<text xml:lang="fi">_Kieli</text>
+		<text xml:lang="fr">_Langue</text>
+		<text xml:lang="gl">_Lingua</text>
+		<text xml:lang="he">_×©×¤×</text>
+		<text xml:lang="hu">_Nyelv</text>
+		<text xml:lang="it">_Lingua</text>
+		<text xml:lang="ja">è¨èª(_L)</text>
+		<text xml:lang="ko">ì¸ì´(_L)</text>
+		<text xml:lang="lt">_Kalba</text>
+		<text xml:lang="lv">_Valoda</text>
+		<text xml:lang="mk">_ÐÐ°Ð·Ð¸Ðº</text>
+		<text xml:lang="mn">_Ð¥ÑÐ»</text>
+		<text xml:lang="ms">_Bahasa</text>
+		<text xml:lang="nl">_Taal</text>
+		<text xml:lang="no">S_prÃ¥k</text>
+		<text xml:lang="pl">_JÄzyk</text>
+		<text xml:lang="pt">_Idioma</text>
+		<text xml:lang="pt_BR">_Idioma</text>
+		<text xml:lang="ro">_LimbÃ£</text>
+		<text xml:lang="ru">_Ð¯Ð·ÑÐº</text>
+		<text xml:lang="sk">_Jazyk</text>
+		<text xml:lang="sl">_Jezik</text>
+		<text xml:lang="sv">S_prÃ¥k</text>
+		<text xml:lang="tr">_Dil</text>
+		<text xml:lang="uk">_ÐÐ¾Ð²Ð°</text>
+		<text xml:lang="vi">N_gÃ´n ngá»¯</text>
+		<text xml:lang="zh_CN">è¯­è¨(_L)</text>
+		<text xml:lang="zh_TW">èªè¨(_L)</text>
+	      </item>
+            </box>
+          </item>
+          <item type="rect" id="session_button" button="true">
+            <normal color="#ffffff"/>
+	    <pos y="50%" anchor="w" width="box" height="box"/>
+            <box orientation="horizontal" spacing="10" xpadding="10">
+	      <item type="pixmap">
+	        <normal file="session.png" tint="#dddddd"/>
+	        <prelight file="session.png"/>
+	        <active file="session.png" tint="#ff0000"/>
+	        <pos y="50%" anchor="w"/>
+	      </item>
+	      <item type="label">
+	        <normal color="#000000" font="Sans 14"/>
+		<prelight color="#666666" font="Sans 14"/>
+		<active color="#ff0000" font="Sans 14"/>
+	        <pos y="50%" anchor="w"/>
+		<!-- Stock label for: _Session -->
+		<stock type="session"/>
+		<!-- Kept for compatibility with older gdm versions -->
+		<text>_Session</text>
+		<text xml:lang="am">á­áá áá (_S)</text>
+		<text xml:lang="be">_Ð¡ÑÐ°Ð½Ñ</text>
+		<text xml:lang="bg">_Ð¡ÐµÑÐ¸Ñ</text>
+		<text xml:lang="ca">_SessiÃ³</text>
+		<text xml:lang="cs">_SezenÃ­</text>
+		<text xml:lang="da">_Session</text>
+		<text xml:lang="de">_Sitzung</text>
+		<text xml:lang="el">Î£ÏÎ½Îµ_Î´ÏÎ¯Î±</text>
+		<text xml:lang="es">_SesiÃ³n</text>
+		<text xml:lang="et">_Sessioon</text>
+		<text xml:lang="fi">_Istunto</text>
+		<text xml:lang="fr">_Session</text>
+		<text xml:lang="gl">_SesiÃ³n</text>
+		<text xml:lang="he">_×ª×¦××¨×ª ××¤×¢××</text>
+		<text xml:lang="hu">_Munkamenet</text>
+		<text xml:lang="it">_Sessione</text>
+		<text xml:lang="ja">ã»ãã·ã§ã³(_S)</text>
+		<text xml:lang="ko">ì¸ì(_S)</text>
+		<text xml:lang="lt">_Sesija</text>
+		<text xml:lang="lv">_Sesija</text>
+		<text xml:lang="mk">_Ð¡ÐµÑÐ¸ÑÐ°</text>
+		<text xml:lang="mn">_Sitzung</text>
+		<text xml:lang="ms">_Sesi</text>
+		<text xml:lang="nl">_Sessie</text>
+		<text xml:lang="no">_Sesjon</text>
+		<text xml:lang="pl">_Sesja</text>
+		<text xml:lang="pt">_SessÃ£o</text>
+		<text xml:lang="pt_BR">_SessÃ£o</text>
+		<text xml:lang="ro">S_esiune</text>
+		<text xml:lang="ru">_Ð¡ÐµÐ°Ð½Ñ</text>
+		<text xml:lang="sk">_Sedenie</text>
+		<text xml:lang="sl">_Seja</text>
+		<text xml:lang="sv">_Session</text>
+		<text xml:lang="tr">_Oturum</text>
+		<text xml:lang="uk">Ð¡ÐµÐ°_Ð½Ñ</text>
+		<text xml:lang="vi">_Session</text>
+		<text xml:lang="zh_CN">ä¼è¯(_S)</text>
+		<text xml:lang="zh_TW">ä½æ¥­éæ®µ(_S)</text>
+	      </item>
+            </box>
+          </item>
+          <item type="rect" id="system_button" button="true">
+            <normal color="#ffffff"/>
+	    <show modes="console" type="system"/>
+	    <pos y="50%" anchor="w" width="box" height="box"/>
+            <box orientation="horizontal" spacing="10" xpadding="10">
+	      <item type="pixmap">
+	        <normal file="system.png" tint="#dddddd"/>
+	        <prelight file="system.png"/>
+	        <active file="system.png" tint="#ff0000"/>
+	        <pos y="50%" anchor="w"/>
+	      </item>
+	      <item type="label">
+	        <normal color="#000000" font="Sans 14"/>
+		<prelight color="#666666" font="Sans 14"/>
+		<active color="#ff0000" font="Sans 14"/>
+	        <pos y="50%" anchor="w"/>
+		<!-- Stock label for: S_ystem -->
+		<stock type="system"/>
+		<!-- Kept for compatibility with older gdm versions -->
+		<text>S_ystem</text>
+		<text xml:lang="am">á²áµá°á (_Y)</text>
+		<text xml:lang="be">_Ð¡ÑÑÑÑÐ¼Ð°</text>
+		<text xml:lang="bg">_Ð¡ÑÑÑÐµÐ¼Ð°</text>
+		<text xml:lang="ca">S_istema</text>
+		<text xml:lang="cs">S_ystÃ©m</text>
+		<text xml:lang="da">S_ystem</text>
+		<text xml:lang="de">S_ystem</text>
+		<text xml:lang="el">_Î£ÏÏÏÎ·Î¼Î±</text>
+		<text xml:lang="es">S_istema</text>
+		<text xml:lang="et">S_Ã¼steem</text>
+		<text xml:lang="fi">_JÃ¤rjestelmÃ¤</text>
+		<text xml:lang="fr">S_ystÃ¨me</text>
+		<text xml:lang="gl">S_istema</text>
+		<text xml:lang="he">_××¢×¨××ª</text>
+		<text xml:lang="hu">_Rendszer</text>
+		<text xml:lang="it">S_istema</text>
+		<text xml:lang="ja">ã·ã¹ãã (_y)</text>
+		<text xml:lang="ko">ìì¤í(_Y)</text>
+		<text xml:lang="lt">S_istema</text>
+		<text xml:lang="lv">S_istÄma</text>
+		<text xml:lang="mk">Ð¡Ð¸ÑÑÐµ_Ð¼</text>
+		<text xml:lang="mn">_Ð¡Ð¸ÑÑÐµÐ¼</text>
+		<text xml:lang="ms">S_istem</text>
+		<text xml:lang="nl">S_ysteem</text>
+		<text xml:lang="no">S_ystem</text>
+		<text xml:lang="pl">_Systemowe</text>
+		<text xml:lang="pt">S_istema</text>
+		<text xml:lang="pt_BR">Sis_tema</text>
+		<text xml:lang="ro">_Sistem</text>
+		<text xml:lang="ru">_Ð¡Ð¸ÑÑÐµÐ¼Ð°</text>
+		<text xml:lang="sk">S_ystÃ©m</text>
+		<text xml:lang="sl">_Sistem</text>
+		<text xml:lang="sv">S_ystem</text>
+		<text xml:lang="tr">_Sistem</text>
+		<text xml:lang="uk">_Ð¡Ð¸ÑÑÐµÐ¼Ð°</text>
+		<text xml:lang="vi">_Há» thá»ng</text>
+		<text xml:lang="zh_CN">ç³»ç»(_Y)</text>
+		<text xml:lang="zh_TW">ç³»çµ±(_Y)</text>
+	      </item>
+            </box>
+          </item>
+          <item type="rect" id="disconnect_button" button="true">
+            <normal color="#ffffff"/>
+	    <show modes="flexi,remote"/>
+	    <pos y="50%" anchor="w" width="box" height="box"/>
+            <box orientation="horizontal" spacing="10" xpadding="10">
+	      <item type="pixmap">
+	        <normal file="disconnect.png" tint="#dddddd"/>
+	        <prelight file="disconnect.png"/>
+	        <active file="disconnect.png" tint="#ff0000"/>
+	        <pos y="50%" anchor="w"/>
+	      </item>
+	      <item type="label">
+	        <normal color="#000000" font="Sans 14"/>
+		<prelight color="#666666" font="Sans 14"/>
+		<active color="#ff0000" font="Sans 14"/>
+	        <pos y="50%" anchor="w"/>
+		<!-- Stock label for: D_isconnect -->
+		<stock type="disconnect"/>
+		<!-- Kept for compatibility with older gdm versions -->
+		<text>D_isconnect</text>
+		<text xml:lang="am">áááááµ á áá­á¥ (_I)</text>
+		<text xml:lang="be">_ÐÐ´Ð»ÑÑÑÑÑÐ°</text>
+		<text xml:lang="bg">Ð _Ð°Ð·ÐºÐ°ÑÐ²Ð°</text>
+		<text xml:lang="ca">_Desconnecta</text>
+		<text xml:lang="cs">Odpoj_it se</text>
+		<text xml:lang="da">_Frakobl</text>
+		<text xml:lang="de">_Trennen</text>
+		<text xml:lang="el">_ÎÏÎ¿ÏÏÎ½Î´ÎµÏÎ·</text>
+		<text xml:lang="es">D_esconectar</text>
+		<text xml:lang="et">_Lahuta Ã¼hendus</text>
+		<text xml:lang="fi">_Katkaise yhteys</text>
+		<text xml:lang="fr">_DÃ©connecter</text>
+		<text xml:lang="gl">D_esconectar</text>
+		<text xml:lang="he">×_×ª× ×ª×§××ª</text>
+		<text xml:lang="hu">_SzÃ©tkapcsolÃ³dÃ¡s</text>
+		<text xml:lang="it">Disco_nnetti</text>
+		<text xml:lang="ja">æ¥ç¶åæ­(_i)</text>
+		<text xml:lang="ko">ì°ê²° í´ì (_I)</text>
+		<text xml:lang="lt">A_tsijungti</text>
+		<text xml:lang="lv">A_tslÄgties</text>
+		<text xml:lang="mk">_OÑÐºÐ°ÑÐ¸ ÑÐµ</text>
+		<text xml:lang="mn">_Ð¡Ð°Ð»Ð³Ð°Ñ</text>
+		<text xml:lang="ms">P_utus</text>
+		<text xml:lang="nl">Verbreek verb_inding</text>
+		<text xml:lang="no">Ko_ble fra</text>
+		<text xml:lang="pl">_RozÅÄcz</text>
+		<text xml:lang="pt">Desl_igar</text>
+		<text xml:lang="pt_BR">D_esconectar</text>
+		<text xml:lang="ro">D_econecteazÃ£</text>
+		<text xml:lang="ru">_ÐÑÐºÐ»ÑÑÐ¸ÑÑÑÑ</text>
+		<text xml:lang="sk">_OdpojiÅ¥</text>
+		<text xml:lang="sl">O_dklopi se</text>
+		<text xml:lang="sv">_Koppla frÃ¥n</text>
+		<text xml:lang="tr">_BaÄlantÄ±yÄ± Kes</text>
+		<text xml:lang="uk">Ð_ÑÐ´&apos;ÑÐ´Ð½Ð°ÑÐ¸ÑÑ</text>
+		<text xml:lang="vi">N_gáº¯t káº¿t ná»i</text>
+		<text xml:lang="zh_CN">æ­å¼è¿æ¥(_I)</text>
+		<text xml:lang="zh_TW">ä¸­æ·é£ç·(_I)</text>
+	        <show modes="remote"/>
+	      </item>
+	      <item type="label">
+	        <normal color="#000000" font="Sans 14"/>
+		<prelight color="#666666" font="Sans 14"/>
+		<active color="#ff0000" font="Sans 14"/>
+	        <pos y="50%" anchor="w"/>
+		<!-- Stock label for: _Quit -->
+		<stock type="quit"/>
+		<!-- Kept for compatibility with older gdm versions -->
+		<text>_Quit</text>
+		<text xml:lang="am">áá£ (_Q)</text>
+		<text xml:lang="be">Ð_ÑÐ¹ÑÑÑÑ</text>
+		<text xml:lang="bg">_ÐÐ°Ð¿ÑÑÐºÐ°</text>
+		<text xml:lang="ca">_Surt</text>
+		<text xml:lang="cs">_Konec</text>
+		<text xml:lang="da">_Afslut</text>
+		<text xml:lang="de">_Beenden</text>
+		<text xml:lang="el">_Î¤ÎµÏÎ¼Î±ÏÎ¹ÏÎ¼ÏÏ</text>
+		<text xml:lang="es">_Salir</text>
+		<text xml:lang="et">L_Ãµpeta</text>
+		<text xml:lang="fi">_Lopeta</text>
+		<text xml:lang="fr">_Quitter</text>
+		<text xml:lang="gl">SaÃ­_r</text>
+		<text xml:lang="he">_××¦×××</text>
+		<text xml:lang="hu">_KilÃ©pÃ©s</text>
+		<text xml:lang="it">_Esci</text>
+		<text xml:lang="ja">çµäº(_Q)</text>
+		<text xml:lang="ko">ëë´ê¸°(_Q)</text>
+		<text xml:lang="lt">IÅ¡_eiti</text>
+		<text xml:lang="lv">_Iziet</text>
+		<text xml:lang="mk">_ÐÑÐ°Ñ</text>
+		<text xml:lang="mn">_ÐÐ°ÑÐ°Ñ</text>
+		<text xml:lang="ms">_Keluar</text>
+		<text xml:lang="nl">_Afsluiten</text>
+		<text xml:lang="no">_Avslutt</text>
+		<text xml:lang="pl">Za_koÅcz</text>
+		<text xml:lang="pt">_Sair</text>
+		<text xml:lang="pt_BR">Sai_r</text>
+		<text xml:lang="ro">_RenunÅ£Ã£</text>
+		<text xml:lang="ru">Ð_ÑÐ¹ÑÐ¸</text>
+		<text xml:lang="sk">_Koniec</text>
+		<text xml:lang="sl">_Izhod</text>
+		<text xml:lang="sv">_Avsluta</text>
+		<text xml:lang="tr">ÃÄ±_k</text>
+		<text xml:lang="uk">_ÐÐ¸Ð¹ÑÐ¸</text>
+		<text xml:lang="vi">T_hoÃ¡t</text>
+		<text xml:lang="zh_CN">éåº(_Q)</text>
+		<text xml:lang="zh_TW">é¢é(_Q)</text>
+	        <show modes="flexi"/>
+	      </item>
+            </box>
+          </item>
+        </box>
+      </item>
+    </fixed>
+  </item>
+  <item type="pixmap">
+    <normal file="gnome-logo.png"/>
+    <pos x="-10" y="-10" anchor="se"/>
+  </item>
+  <item type="label" id="clock">
+    <normal color="#000000" font="Sans 16"/>
+    <pos x="-160" y="-37" anchor="e"/>
+    <text>%c</text>
+  </item>
+
+  <item type="rect" id="caps-lock-warning">
+    <normal color="#FFFFFF" alpha="0.5"/>
+    <pos anchor="c" x="50%" y="75%" width="box" height="box"/>
+    <box orientation="vertical" min-width="400" xpadding="10" ypadding="5" spacing="0">
+      <item type="label">
+        <normal color="#000000" font="Sans 14"/>
+        <pos x="50%" anchor="n"/>
+	<!-- Stock label for: You've got capslock on! -->
+	<stock type="caps-lock-warning"/>
+	<!-- Kept for compatibility with older gdm versions -->
+	<text>You've got capslock on!</text>
+	<text xml:lang="be">Ð£ Ð²Ð°Ñ ÑÐºÐ»ÑÑÐ°Ð½Ñ Ð²ÐµÑÑÐ½Ñ ÑÑÐ³ÑÑÑÐ°Ñ!</text>
+	<text xml:lang="bg">ÐÐ¸Ðµ Ð¸Ð¼Ð°ÑÐµ Ð²ÐºÐ»ÑÑÐµÐ½ &apos;capslock&apos;!</text>
+	<text xml:lang="ca">Teniu capslock activat!</text>
+	<text xml:lang="cs">MÃ¡te zapnut Caps Lock!</text>
+	<text xml:lang="da">Caps lock-tasten er slÃ¥et til!</text>
+	<text xml:lang="de">Der Dauerumschalter ist aktiviert!</text>
+	<text xml:lang="el">ÎÏÎµÏÎµ ÏÎ± ÎºÎµÏÎ±Î»Î±Î¯Î± ÎµÎ½ÎµÏÎ³Î¿ÏÎ¿Î¹Î·Î¼Î­Î½Î±!</text>
+	<text xml:lang="es">Tiene activado el bloqueo de mayÃºsculas.</text>
+	<text xml:lang="et">Sul on caplock peal!</text>
+	<text xml:lang="fi">Sinulla on Caps Lock pÃ¤Ã¤llÃ¤!</text>
+	<text xml:lang="fr">Vous avez la touche Verr. Maj. activÃ©Â !</text>
+	<text xml:lang="gl">Â¡Tes bloqueo de maiÃºsculas activado!</text>
+	<text xml:lang="he">× Caps Lock ×©×× ××××§!</text>
+	<text xml:lang="hu">A capslock aktÃ­v!</text>
+	<text xml:lang="it">Blocco maiuscole attivato!</text>
+	<text xml:lang="ja">ã­ã£ãã¹ã­ãã¯ãONã«ãã¾ãã!</text>
+	<text xml:lang="ko">Caps Lockì´ ì¼ì ¸ ììµëë¤!</text>
+	<text xml:lang="lt">JÅ«sÅ³ Caps Lock yra Ä¯jungtas!</text>
+	<text xml:lang="lv">Tev ir ieslÄgts capslock!</text>
+	<text xml:lang="mk">CAPSLOCK ÑÐ¸ Ðµ ÑÐ¿Ð°Ð»ÐµÐ½!</text>
+	<text xml:lang="mn">Ð¢Ð° Ð±Ð°Ð¹Ð½Ð³ÑÐ½ ÑÑÐ»Ð³Ò¯Ò¯ÑÑÑ(caps lock) Ð´Ð°ÑÑÐ¸ÑÐ¶ÑÑ!</text>
+	<text xml:lang="ms">Anda mempunyai capslock dihidupkan!</text>
+	<text xml:lang="nl">Caps-lock staat aan!</text>
+	<text xml:lang="no">Du har capslock pÃ¥!</text>
+	<text xml:lang="pl">WÅÄczony jest klawisz Caps Lock!</text>
+	<text xml:lang="pt">Tem o capslock ligado!</text>
+	<text xml:lang="pt_BR">VocÃª estÃ¡ com o capslock ligado!</text>
+	<text xml:lang="ro">AveÅ£i tasta Caps Lock apasatÄ!</text>
+	<text xml:lang="ru">ÐÐ»Ð°Ð²Ð¸ÑÐ° &quot;Caps Lock&quot; Ð±ÑÐ»Ð° Ð½Ð°Ð¶Ð°ÑÐ°!</text>
+	<text xml:lang="sk">MÃ¡te zapnutÃ½ CAPS LOCK.</text>
+	<text xml:lang="sl">VkljuÄene imate velike Ärke!</text>
+	<text xml:lang="sv">Du har CapsLock pÃ¥!</text>
+	<text xml:lang="tr">Caps lock tuÅunuz aÃ§Ä±k!</text>
+	<text xml:lang="uk">Ð£ Ð²Ð°Ñ Ð²Ð²ÑÐ¼ÐºÐ½ÐµÐ½Ð¸Ð¹ CapsLock!</text>
+	<text xml:lang="vi">Báº¡n Äang báº­t CapsLock!</text>
+	<text xml:lang="zh_CN">æ¨ç capslock æå¼äºï¼</text>
+	<text xml:lang="zh_TW">è«çæä¸è¦æä¸ capslockï¼</text>
+      </item>
+    </box>
+  </item>
+
+  <item type="rect" id="timed-rect">
+    <show type="timed"/>
+    <normal color="#FFFFFF" alpha="0.5"/>
+    <pos anchor="c" x="50%" y="25%" width="box" height="box"/>
+    <box orientation="vertical" min-width="400" xpadding="10" ypadding="5" spacing="0">
+      <item type="label" id="timed-label">
+        <normal color="#000000" font="Sans 14"/>
+        <pos x="50%" anchor="n"/>
+	<!-- Stock label for: User %s will login in %d seconds -->
+	<stock type="timed-label"/>
+	<!-- Kept for compatibility with older gdm versions -->
+	<text>User %s will login in %d seconds</text>
+	<text xml:lang="az">%s istifadÉÃ§isi %d saniyÉ iÃ§indÉ sistemÉ girÉcÉkdir</text>
+	<text xml:lang="be">ÐÐ°ÑÑÑÑÐ°Ð»ÑÐ½ÑÐº %s Ð·Ð°ÑÑÐ³ÑÑÑÑÑÐµÑÑÐ° Ð¿ÑÐ°Ð· %d ÑÑÐºÑÐ½Ð´Ð°Ñ</text>
+	<text xml:lang="bg">ÐÐ¾ÑÑÐµÐ±Ð¸ÑÐµÐ» %s ÑÐµ Ð²Ð»ÐµÐ·Ðµ %d ÑÐµÐºÑÐ½Ð´Ð¸</text>
+	<text xml:lang="ca">L&apos;usuari %s entrarÃ  en %d segons</text>
+	<text xml:lang="cs">UÅ¾ivatel %s bude pÅihlÃ¡Å¡en za %d vteÅin</text>
+	<text xml:lang="da">Brugeren %s logger pÃ¥ om %d sekunder</text>
+	<text xml:lang="de">Benutzer %s wird in %d Sekunden angemeldet</text>
+	<text xml:lang="el">Î ÏÏÎ®ÏÏÎ·Ï %s Î¸Î± ÏÏÎ½Î´ÎµÎ¸ÎµÎ¯ ÏÎµ %d Î´ÎµÏÏÎµÏÏÎ»ÎµÏÏÎ±</text>
+	<text xml:lang="es">El usuario %s accederÃ¡ en %d segundos</text>
+	<text xml:lang="et">Kasutaja %s logitakse sisse %d sekundi pÃ¤rast</text>
+	<text xml:lang="eu">%s erabiltzaileak %d segundo barru hasiko du saioa</text>
+	<text xml:lang="fi">kÃ¤yttÃ¤jÃ¤ %s kirjautuu %d sekunnin kuluttua</text>
+	<text xml:lang="fr">L&apos;utilisateur %s se connectera dans %d secondes</text>
+	<text xml:lang="gl">A/O usuaria/o %s conectarÃ¡ en %d segundos</text>
+	<text xml:lang="he">×××©×ª××© %s ××ª×××¨ ××¢×× %d ×©× ×××ª</text>
+	<text xml:lang="hu">%s felhasznÃ¡lÃ³ belÃ©ptetÃ©se %d mÃ¡sodperc mÃºlva</text>
+	<text xml:lang="it">L&apos;utente %s effettuerÃ  il login tra %d secondi</text>
+	<text xml:lang="ja">ã¦ã¼ã¶%sã¯%dç§å¾ã«ã­ã°ã¤ã³</text>
+	<text xml:lang="ko">ì¬ì©ì %sì(ë) %d ì´ ì´ë´ì ë¡ê·¸ì¸ íì¬ì¼ í©ëë¤</text>
+	<text xml:lang="lt">Vartotojas %s bus prijungtas per %d sek.</text>
+	<text xml:lang="lv">LietotÄjs %s pieteiksies %d sekundÄs</text>
+	<text xml:lang="mk">ÐÐ¾ÑÐ¸ÑÐ½Ð¸ÐºÐ¾Ñ %s ÑÐµ ÑÐµ Ð»Ð¾Ð³Ð¸ÑÐ° Ð·Ð° %d ÑÐµÐºÑÐ´Ð½Ð¸</text>
+	<text xml:lang="mn">Ð¥ÑÑÑÐ³Ð»ÑÐ³Ñ %s Ð´Ð°ÑÐ°Ð°Ð³Ð¸Ð¹Ð½ %d ÑÐµÐºÑÐ½Ð´ÑÐ´ Ð½ÑÐ²ÑÑÑÑ Ð¾ÑÐ¶ Ð¸ÑÐ½Ñ</text>
+	<text xml:lang="ms">Pengguna %s akan logmasuk dalam %d saat</text>
+	<text xml:lang="nl">Gebruiker %s wordt aangemeld over %d seconden</text>
+	<text xml:lang="nn">Brukar %s vil logge inn om %d sekund</text>
+	<text xml:lang="no">Bruker %s vil logge pÃ¥ om %d sekunder</text>
+	<text xml:lang="pl">UÅ¼ytkownik %s zostanie zalogowany w ciÄgu %d sekund</text>
+	<text xml:lang="pt">Utilizador %s iniciarÃ¡ sessÃ£o em %d segundos</text>
+	<text xml:lang="pt_BR">O usuÃ¡rio %s efetuarÃ¡ login em %d segundos</text>
+	<text xml:lang="ro">Utilizatorul %s va fi logat Ã®n %d secunde</text>
+	<text xml:lang="ru">ÐÐ¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»Ñ %s Ð±ÑÐ´ÐµÑ Ð·Ð°ÑÐµÐ³ÐµÑÑÑÐ¸ÑÐ¾Ð²Ð°Ð½ Ð² ÑÐµÑÐµÐ½Ð¸Ð¸ %d ÑÐµÐºÑÐ½Ð´</text>
+	<text xml:lang="sk">PouÅ¾Ã­vateÄ¾ %s bude automaticky prihlÃ¡senÃ½ za %d sekÃºnd</text>
+	<text xml:lang="sl">Uporabnik %s se bo prijavil v %d sekundah</text>
+	<text xml:lang="sv">AnvÃ¤ndaren %s kommer att logga in om %d sekunder</text>
+	<text xml:lang="tr">%s kullanÄ±cÄ±sÄ± %d saniye iÃ§inde giriÅ yapacak</text>
+	<text xml:lang="uk">ÐÐ¾ÑÐ¸ÑÑÑÐ²Ð°Ñ %s Ð²Ð²ÑÐ¹Ð´Ðµ ÑÐµÑÐµÐ· %d ÑÐµÐºÑÐ½Ð´</text>
+	<text xml:lang="vi">NgÆ°á»i dÃ¹ng %s sáº½ ÄÄng nháº­p trong vÃ²ng %d giÃ¢y</text>
+	<text xml:lang="zh_CN">ç¨æ· %s å°å¨ %d ç§åç»å½</text>
+	<text xml:lang="zh_TW">ä½¿ç¨è %s å°æå¨ %d å§ç»å¥</text>
+      </item>
+    </box>
+  </item>
+
+  <item type="rect">
+    <normal color="#FFFFFF" alpha="0.5"/>
+    <pos anchor="c" x="50%" y="50%" width="box" height="box"/>
+    <box orientation="vertical" min-width="300" xpadding="30" ypadding="30" spacing="10">
+      <item type="label">
+        <pos anchor="n" x="50%"/>
+        <normal color="#000000" font="Sans 18"/>
+	<!-- Stock label for: Welcome to %h -->
+	<stock type="welcome-label"/>
+	<!-- Kept for compatibility with older gdm versions -->
+	<text>Welcome to %h</text>
+	<text xml:lang="be">ÐÐ°Ð»Ñ Ð»Ð°ÑÐºÐ° Ñ %h</text>
+	<text xml:lang="bg">ÐÐ¾Ð±ÑÐµ Ð´Ð¾ÑÐ»Ð¸ Ð² %h</text>
+	<text xml:lang="ca">Benvingut a %h</text>
+	<text xml:lang="cs">VÃ­tejte na %h</text>
+	<text xml:lang="da">Velkommen til %h</text>
+	<text xml:lang="de">Willkommen auf %h</text>
+	<text xml:lang="el">ÎÎ±Î»ÏÏ Î®Î»Î¸Î±ÏÎµ ÏÏÎ¿ %h</text>
+	<text xml:lang="es">Bienvenido a %h</text>
+	<text xml:lang="et">Tere tulemast masinasse %h</text>
+	<text xml:lang="fi">%h - tervetuloa.</text>
+	<text xml:lang="fr">Bienvenue sur %h</text>
+	<text xml:lang="gl">Benvida/o a %h</text>
+	<text xml:lang="he">××¨×××× ××××× × -  %h</text>
+	<text xml:lang="hu">%h Ã¼dvÃ¶zli Ãnt!</text>
+	<text xml:lang="it">Benvenuti su %s</text>
+	<text xml:lang="ja">%h ã¸ãããã</text>
+	<text xml:lang="ko">%hì ì¤ì  ê²ì íìí©ëë¤</text>
+	<text xml:lang="lt">Sveiki atvykÄ Ä¯ %h</text>
+	<text xml:lang="lv">Laipni lÅ«gti %h</text>
+	<text xml:lang="mk">ÐÐ¾Ð±ÑÐ¾Ð´Ð¾ÑÐ´Ðµ Ð½Ð° %h</text>
+	<text xml:lang="mn">%h2- ÑÐ°Ð²ÑÐ°Ð¹ Ð¼Ð¾ÑÐ¸Ð»</text>
+	<text xml:lang="ms">Selamat Datang ke %h</text>
+	<text xml:lang="nl">Welkom bij %h</text>
+	<text xml:lang="no">Velkommen til %h</text>
+	<text xml:lang="pl">Witaj w systemie %h</text>
+	<text xml:lang="pt">Bem Vindo ao %h</text>
+	<text xml:lang="pt_BR">Bem-vindo a %h</text>
+	<text xml:lang="ro">Bine aÅ£i venit la %h</text>
+	<text xml:lang="ru">ÐÐ¾Ð±ÑÐ¾ Ð¿Ð¾Ð¶Ð°Ð»Ð¾Ð²Ð°ÑÑ Ð½Ð° ÑÐµÑÐ²ÐµÑ %h</text>
+	<text xml:lang="sk">VÃ­ta vÃ¡s %h</text>
+	<text xml:lang="sl">DobrodoÅ¡li na %h</text>
+	<text xml:lang="sv">VÃ¤lkommen till %h</text>
+	<text xml:lang="tr">HoÅ Geldiniz (%s)</text>
+	<text xml:lang="uk">ÐÐ°ÑÐºÐ°Ð²Ð¾ Ð¿ÑÐ¾ÑÐ¸Ð¼Ð¾ Ð´Ð¾ %h</text>
+	<text xml:lang="vi">ChÃ o má»«ng tá»i %h</text>
+	<text xml:lang="zh_CN">æ¬¢è¿æ¥å° %h</text>
+	<text xml:lang="zh_TW">æ­¡è¿ä¾å° %h</text>
+      </item>
+      <item type="label" id="pam-prompt">
+        <pos anchor="nw" x="10%"/>
+        <normal color="#000000" font="Sans 16"/>
+	<!-- Stock label for: Username: -->
+	<stock type="username-label"/>
+	<!-- Kept for compatibility with older gdm versions -->
+	<text>Username:</text>
+	<text xml:lang="am">á¨á°á áá áµáá¦</text>
+	<text xml:lang="az">Ä°stifadÉÃ§i AdÄ±:</text>
+	<text xml:lang="be">ÐÐ¼Ñ ÐºÐ°ÑÑÑÑÐ°Ð»ÑÐ½ÑÐºÐ°:</text>
+	<text xml:lang="bg">ÐÐ¼Ðµ:</text>
+	<text xml:lang="ca">Nom d&apos;usuari:</text>
+	<text xml:lang="cs">UÅ¾ivatel:</text>
+	<text xml:lang="da">Brugernavn:</text>
+	<text xml:lang="de">Benutzername:</text>
+	<text xml:lang="el">ÎÎ½Î¿Î¼Î± Î§ÏÎ®ÏÏÎ·:</text>
+	<text xml:lang="es">Nombre de usuario:</text>
+	<text xml:lang="et">Kasutajanimi:</text>
+	<text xml:lang="eu">Erabiltzaile-izena:</text>
+	<text xml:lang="fi">KÃ¤yttÃ¤jÃ¤tunnus:</text>
+	<text xml:lang="fr">IdentifiantÂ :</text>
+	<text xml:lang="gl">Usuaria/o:</text>
+	<text xml:lang="he">×©× ××©×ª××©:</text>
+	<text xml:lang="hu">FelhasznÃ¡lÃ³:</text>
+	<text xml:lang="it">Utente: </text>
+	<text xml:lang="ja">ã¦ã¼ã¶ID:</text>
+	<text xml:lang="ko">ì¬ì©ìì´ë¦:</text>
+	<text xml:lang="lt">Vartotojo vardas:</text>
+	<text xml:lang="lv">LietotÄjvÄrds:</text>
+	<text xml:lang="mn">Ð¥ÑÑÑÐ³Ð»ÑÐ³ÑÐ¸Ð¹Ð½ Ð½ÑÑ:</text>
+	<text xml:lang="ms">Nama Pengguna:</text>
+	<text xml:lang="nl">Gebruikersnaam:</text>
+	<text xml:lang="nn">Brukarnamn:</text>
+	<text xml:lang="no">Brukernavn:</text>
+	<text xml:lang="pl">Nazwa uÅ¼ytkownika:</text>
+	<text xml:lang="pt">Utilizador:</text>
+	<text xml:lang="pt_BR">Nome do usuÃ¡rio:</text>
+	<text xml:lang="ro">Nume utilizator:</text>
+	<text xml:lang="ru">ÐÐ¼Ñ Ð¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»Ñ:</text>
+	<text xml:lang="sk">PouÅ¾Ã­vateÄ¾skÃ© meno:</text>
+	<text xml:lang="sl">UporabniÅ¡ko ime:</text>
+	<text xml:lang="sv">AnvÃ¤ndarnamn:</text>
+	<text xml:lang="tr">KullanÄ±cÄ± adÄ±:</text>
+	<text xml:lang="uk">ÐÐ¾ÑÐ¸ÑÑÑÐ²Ð°Ñ:</text>
+	<text xml:lang="vi">TÃªn ngÆ°á»i dÃ¹ng:</text>
+	<text xml:lang="zh_CN">ç¨æ·åï¼</text>
+	<text xml:lang="zh_TW">ç¨æ¶åç¨±ï¼</text>
+      </item>
+      <item type="rect">
+	<normal color="#000000"/>
+        <pos anchor="n" x="50%" height="24" width="80%"/>
+	<fixed>
+	  <item type="entry" id="user-pw-entry">
+            <pos anchor="nw" x="1" y="1" height="-2" width="-2"/>
+	  </item>
+	</fixed>
+      </item>
+      <item type="label" id="pam-message">
+        <pos anchor="n" x="50%"/>
+        <normal color="#000000" font="Sans 16"/>
+	<text></text>
+      </item>
+    </box>
+    <fixed>
+      <item type="label" id="pam-error">
+        <pos anchor="n" x="50%" y="110%"/>
+        <normal color="#000000" font="Sans 16"/>
+        <text></text>
+      </item>
+    </fixed>
+  </item>
+</greeter>
+
+
